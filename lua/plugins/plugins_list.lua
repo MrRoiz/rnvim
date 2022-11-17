@@ -17,6 +17,15 @@ local plugins = {
     comment = "numToStr/Comment.nvim",
     autotag = "windwp/nvim-ts-autotag",
 
+    --CMP Stuff
+    cmp_nvim_lsp = "hrsh7th/cmp-nvim-lsp",
+    cmp_buffer = "hrsh7th/cmp-buffer",
+    cmp_path = "hrsh7th/cmp-path",
+    cmp_cmdline = "hrsh7th/cmp-cmdline",
+    cmp = "hrsh7th/nvim-cmp",
+    luasnip = "L3MON4D3/LuaSnip",
+    friendly_snippets = "rafamadriz/friendly-snippets",
+
     -- Navigation
     nvim_web_dev_icons = "nvim-tree/nvim-web-devicons",
     plenary = 'nvim-lua/plenary.nvim',

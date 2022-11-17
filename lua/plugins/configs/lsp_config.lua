@@ -5,12 +5,17 @@ return function()
         ['js/ts'] = 'tsserver'
     }
 
-    local ok, lspconfig = pcall(require, 'lspconfig')
-    if not ok then
+    local ok_capabilities, cmp_nvim_lsp = pcall(require,'cmp_nvim_lsp')
+    local ok_lspconfig, lspconfig = pcall(require, 'lspconfig')
+    if not ok_capabilities or not ok_lspconfig then
         return
     end
 
+    local capabilities = cmp_nvim_lsp.default_capabilities()
+
     for _, lsp_server in pairs(LSP_SERVERS) do
-        lspconfig[lsp_server].setup({})
+        lspconfig[lsp_server].setup({
+            capabilities = capabilities,
+        })
     end
 end

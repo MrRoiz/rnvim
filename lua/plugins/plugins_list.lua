@@ -1,7 +1,7 @@
 local plugins = {
     packer = 'wbthomason/packer.nvim',
 
-    -- Colorschemes and customizatoion
+    -- Colorschemes and customization
     ayu = "Shatur/neovim-ayu",
     indent_line = "Yggdroot/indentLine",
     lualine = "nvim-lualine/lualine.nvim",
@@ -35,6 +35,7 @@ local plugins = {
 
     -- IDE
     floaterm = "voldikss/vim-floaterm",
+    guess_indent = "NMAC427/guess-indent.nvim",
 
     -- Git
     gitsigns = "lewis6991/gitsigns.nvim"

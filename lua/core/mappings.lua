@@ -149,6 +149,24 @@ local Mappings = {
             }
         }
     },
+
+    barbar = {
+        plugin = true,
+        n = {
+            ['Move to the next buffer'] = {
+                command = "<A-l>",
+                mapping = ":BufferNext<CR>"
+            },
+            ['Move to the previous buffer'] = {
+                command = "<A-h>",
+                mapping = ":BufferPrevious<CR>"
+            },
+            ['Close current buffer'] = {
+                command = "<A-w>",
+                mapping = ":BufferClose<CR>"
+            }
+        }
+    }
 }
 
 return Mappings

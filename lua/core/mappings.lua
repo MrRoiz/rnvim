@@ -142,6 +142,10 @@ local Mappings = {
             ['Open Telescope Keymaps'] = {
                 command = "<Leader>k",
                 mapping = ":Telescope keymaps<CR>"
+            },
+            ['Show git log'] = {
+                command = "<Leader>glo",
+                mapping = ":Telescope git_commits initial_mode=normal<CR>"
             }
         }
     },

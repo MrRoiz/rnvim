@@ -70,6 +70,12 @@ local Mappings = {
     },
 
     general = {
+        i = {
+            ['Save current file'] = {
+                command = "<C-s>",
+                mapping = "<Esc>:w<CR>i"
+            },
+        },
         n = {
             ['Save current file'] = {
                 command = "<C-s>",

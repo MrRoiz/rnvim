@@ -8,12 +8,14 @@ local plugins = {
 
     -- Syntax Highlighting
     treesitter = "nvim-treesitter/nvim-treesitter",
+    illuminate = "RRethy/vim-illuminate",
 
     -- LSP and Autocomplete
     lsp_config = "neovim/nvim-lspconfig",
     mason = 'williamboman/mason.nvim',
     autopairs = "windwp/nvim-autopairs",
     comment = "numToStr/Comment.nvim",
+    autotag = "windwp/nvim-ts-autotag",
 
     -- Navigation
     nvim_web_dev_icons = "nvim-tree/nvim-web-devicons",

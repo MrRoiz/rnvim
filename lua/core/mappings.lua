@@ -146,6 +146,10 @@ local Mappings = {
             ['Show git log'] = {
                 command = "<Leader>glo",
                 mapping = ":Telescope git_commits initial_mode=normal<CR>"
+            },
+            ['Show git status'] = {
+                command = "<Leader>gst",
+                mapping = ":Telescope git_status initial_mode=normal<CR>"
             }
         }
     },

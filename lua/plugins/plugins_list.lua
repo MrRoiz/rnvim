@@ -16,6 +16,7 @@ local plugins = {
     autopairs = "windwp/nvim-autopairs",
     comment = "numToStr/Comment.nvim",
     autotag = "windwp/nvim-ts-autotag",
+    fidget = "j-hui/fidget.nvim",
 
     --CMP Stuff
     cmp_nvim_lsp = "hrsh7th/cmp-nvim-lsp",

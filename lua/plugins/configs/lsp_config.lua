@@ -3,7 +3,13 @@ return function()
     local LSP_SERVERS = {
         lua = {
             server = "sumneko_lua",
-            settings = {}
+            settings = {
+                Lua = {
+                    diagnostics = {
+                        globals = { 'vim' }
+                    }
+                }
+            }
         },
         python = {
             server = 'pyright',

@@ -73,7 +73,7 @@ local Mappings = {
         i = {
             ['Save current file'] = {
                 command = "<C-s>",
-                mapping = "<Esc>:w<CR>i"
+                mapping = "<Esc>:w<CR>li"
             },
         },
         n = {

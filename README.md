@@ -1,6 +1,9 @@
 # rnvim
 Custom neovim configuration
 
+## Dependencies
+- [Ripgrep](https://github.com/BurntSushi/ripgrep) bynary is required just to use Telescope live_grep
+
 ### Test it on a Docker container
 
 ```console

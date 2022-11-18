@@ -5,6 +5,8 @@ local plugins = {
     ayu = "Shatur/neovim-ayu",
     indent_line = "Yggdroot/indentLine",
     lualine = "nvim-lualine/lualine.nvim",
+    dressing = "stevearc/dressing.nvim",
+    scrollbar = "petertriho/nvim-scrollbar",
 
     -- LSP and Autocomplete
     lsp_config = "neovim/nvim-lspconfig",

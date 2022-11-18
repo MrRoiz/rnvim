@@ -1,7 +1,7 @@
 return {
     server = "tsserver",
     settings = {
-        diagnostigs = {
+        diagnostics = {
             ignoredCodes = {
                 -- https://github.com/microsoft/TypeScript/blob/main/src/compiler/diagnosticMessages.json
                 -- TODO: Find a way to separate this option to apply it only for Javascript

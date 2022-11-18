@@ -33,7 +33,22 @@ M.load_mappings = function(plugin_name)
             vim.g.mapleader = leader_key
         end
     end
+end
 
+M.parse_languages_to_treesitter = function ()
+    local languages = require('core.languages')
+    local parsed_languages = {}
+
+    for _, language in pairs(languages) do
+        if language == "javascript_typescript" then
+            table.insert(parsed_languages, "javascript")
+            table.insert(parsed_languages, "typescript")
+        else
+            table.insert(parsed_languages, language)
+        end
+    end
+
+    return parsed_languages
 end
 
 return M

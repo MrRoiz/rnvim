@@ -5,6 +5,7 @@ return function()
     end
 
     treesitter.setup({
+        ensure_installed = require('core.utils').parse_languages_to_treesitter(),
         sync_install = true,
         highlight = {
             enable = true,
@@ -15,4 +16,4 @@ return function()
             additional_vim_regex_highlighting = false,
         },
     })
-end 
+end

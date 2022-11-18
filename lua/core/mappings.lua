@@ -150,6 +150,10 @@ local Mappings = {
             ['Show git status'] = {
                 command = "<Leader>gst",
                 mapping = ":Telescope git_status initial_mode=normal<CR>"
+            },
+            ['Open Telescope live_grep'] = {
+                command = "<Leader>fg",
+                mapping = ":Telescope live_grep<CR>"
             }
         }
     },

@@ -16,6 +16,9 @@ local plugins = {
     autotag = "windwp/nvim-ts-autotag",
     fidget = "j-hui/fidget.nvim",
 
+    -- Null-ls Stuff
+    null_ls = "jose-elias-alvarez/null-ls.nvim",
+
     -- Syntax Highlighting
     illuminate = "RRethy/vim-illuminate",
     treesitter = "nvim-treesitter/nvim-treesitter",

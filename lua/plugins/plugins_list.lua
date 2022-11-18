@@ -38,6 +38,7 @@ local plugins = {
     floaterm = "voldikss/vim-floaterm",
     guess_indent = "NMAC427/guess-indent.nvim",
     wilder = "gelguy/wilder.nvim",
+    visual_multi = "mg979/vim-visual-multi",
 
     -- Git
     gitsigns = "lewis6991/gitsigns.nvim"

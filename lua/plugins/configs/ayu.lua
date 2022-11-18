@@ -4,6 +4,7 @@ return function()
         return
     end
 
+
     ayu.setup({
         mirage = false,
         overrides = {
@@ -13,5 +14,5 @@ return function()
         }
     })
 
-    vim.cmd('colorscheme ayu')
+    vim.cmd('colorscheme ayu-dark')
 end

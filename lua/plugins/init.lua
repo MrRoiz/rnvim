@@ -38,16 +38,16 @@ return require('packer').startup(function(use)
             final_plugin['requires'] = requires
         end
 
-        local afters_path = 'plugins/afters' .. alias
+        local afters_path = 'plugins/afters/' .. alias
         local afters_ok, afters = pcall(require, afters_path)
         if afters_ok then
             final_plugin['after'] = afters
         end
 
-        local runs_path = 'plugins/runs' .. alias
+        local runs_path = 'plugins/runs/' .. alias
         local runs_ok, runs = pcall(require, runs_path)
         if runs_ok then
-            final_plugin['after'] = runs
+            final_plugin['runs'] = runs
         end
 
         use(final_plugin)

@@ -6,10 +6,6 @@ local plugins = {
     indent_line = "Yggdroot/indentLine",
     lualine = "nvim-lualine/lualine.nvim",
 
-    -- Syntax Highlighting
-    treesitter = "nvim-treesitter/nvim-treesitter",
-    illuminate = "RRethy/vim-illuminate",
-
     -- LSP and Autocomplete
     lsp_config = "neovim/nvim-lspconfig",
     mason = 'williamboman/mason.nvim',
@@ -17,6 +13,10 @@ local plugins = {
     comment = "numToStr/Comment.nvim",
     autotag = "windwp/nvim-ts-autotag",
     fidget = "j-hui/fidget.nvim",
+
+    -- Syntax Highlighting
+    illuminate = "RRethy/vim-illuminate",
+    treesitter = "nvim-treesitter/nvim-treesitter",
 
     --CMP Stuff
     cmp_nvim_lsp = "hrsh7th/cmp-nvim-lsp",

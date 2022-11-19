@@ -29,7 +29,7 @@ M.load_mappings = function(plugin_name)
         ) then
             set_mapping(mode_group)
         elseif command_type == "leader_key" then
-            leader_key = mode_group
+            local leader_key = mode_group
             vim.g.mapleader = leader_key
         end
     end
@@ -41,6 +41,7 @@ M.parse_languages_to_treesitter = function ()
 
     for _, language in pairs(languages) do
         if language == "javascript_typescript" then
+            table.insert(parsed_languages, "tsx")
             table.insert(parsed_languages, "javascript")
             table.insert(parsed_languages, "typescript")
         else

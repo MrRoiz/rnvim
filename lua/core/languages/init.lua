@@ -1,3 +1,4 @@
+-- Find a better way to organize default languages
 return {
     "lua",
     "python",

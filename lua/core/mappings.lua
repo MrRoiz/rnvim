@@ -75,6 +75,10 @@ local Mappings = {
                 command = "<C-s>",
                 mapping = "<Esc>:w<CR>li"
             },
+            ['Exit insert mode'] = {
+                command = "<C-q>",
+                mapping = "<Esc><Esc>"
+            }
         },
         n = {
             ['Save current file'] = {

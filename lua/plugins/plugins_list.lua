@@ -7,7 +7,7 @@ local plugins = {
     lualine = "nvim-lualine/lualine.nvim",
     dressing = "stevearc/dressing.nvim",
     scrollbar = "petertriho/nvim-scrollbar",
-    gruvbox = "morhetz/gruvbox",
+    gruvbox = "ellisonleao/gruvbox.nvim",
 
     -- LSP and Autocomplete
     lsp_config = "neovim/nvim-lspconfig",

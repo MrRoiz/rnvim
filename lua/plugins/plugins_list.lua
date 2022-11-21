@@ -41,7 +41,7 @@ local plugins = {
     barbar = "romgrk/barbar.nvim",
 
     -- IDE
-    floaterm = "voldikss/vim-floaterm",
+    toggleterm = "akinsho/toggleterm.nvim",
     guess_indent = "NMAC427/guess-indent.nvim",
     wilder = "gelguy/wilder.nvim",
     visual_multi = "mg979/vim-visual-multi",

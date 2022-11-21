@@ -126,12 +126,12 @@ local Mappings = {
         }
     },
 
-    floaterm = {
+    toggleterm = {
         plugin = true,
         n = {
-            ['Open Floaterm'] = {
+            ['Open a floating term'] = {
                 command = "<Leader>tt",
-                mapping = ":FloatermNew<CR>"
+                mapping = ":ToggleTerm direction=float<CR>"
             }
         }
     },

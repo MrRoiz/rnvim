@@ -9,6 +9,9 @@ Custom neovim configuration
 - Linters: eslint_d
 - Formatters: prettierd
 
+### Octo Dependencies
+- [Github CLI](https://cli.github.com/) to active the integration with github
+
 ### Test it on a Docker container
 ```console
 docker run -w /root -it --rm alpine:edge sh -uelic '

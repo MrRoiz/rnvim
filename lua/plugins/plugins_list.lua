@@ -3,7 +3,7 @@ local plugins = {
 
     -- Colorschemes and customization
     ayu = "Shatur/neovim-ayu",
-    indent_line = "Yggdroot/indentLine",
+    indent_blankline = "lukas-reineke/indent-blankline.nvim",
     lualine = "nvim-lualine/lualine.nvim",
     dressing = "stevearc/dressing.nvim",
     scrollbar = "petertriho/nvim-scrollbar",

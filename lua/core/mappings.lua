@@ -178,7 +178,29 @@ local Mappings = {
                 mapping = ":BufferClose<CR>"
             }
         }
-    }
+    },
+
+    octo = {
+        plugin = true,
+        n = {
+            ["List PR's"] = {
+                command = "<Leader>opl",
+                mapping = ":Octo pr list<CR>"
+            },
+            ['Start PR review'] = {
+                command = "<Leader>ors",
+                mapping = ":Octo review start<CR>"
+            },
+            ['Resume PR review'] = {
+                command = "<Leader>orr",
+                mapping = ":Octo review resume<CR>"
+            },
+            ['Submit PR review'] = {
+                command = "<Leader>orss",
+                mapping = ":Octo review submit<CR>"
+            }
+        }
+    },
 }
 
 return Mappings

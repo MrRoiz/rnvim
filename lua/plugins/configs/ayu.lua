@@ -10,9 +10,6 @@ return function()
         overrides = {
             Comment = {
                 fg = "#6e6e6e"
-            },
-            Normal = {
-                bg = "#080c12"
             }
         }
     })

@@ -45,9 +45,10 @@ local plugins = {
     guess_indent = "NMAC427/guess-indent.nvim",
     wilder = "gelguy/wilder.nvim",
     visual_multi = "mg979/vim-visual-multi",
-    octo = "pwntester/octo.nvim",
 
     -- Git
+    octo = "pwntester/octo.nvim",
+    diffview = "sindrets/diffview.nvim",
     gitsigns = "lewis6991/gitsigns.nvim"
 }
 

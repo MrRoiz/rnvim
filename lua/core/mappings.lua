@@ -201,6 +201,20 @@ local Mappings = {
             }
         }
     },
+
+    diffview = {
+        plugin = true,
+        n = {
+            ["Open diffview"] = {
+                command = "<Leader>dv",
+                mapping = ":DiffviewOpen<CR>"
+            },
+            ["Close diffview"] = {
+                command = "<Leader>dvc",
+                mapping = ":DiffviewClose<CR>"
+            }
+        }
+    }
 }
 
 return Mappings

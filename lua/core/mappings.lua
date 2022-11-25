@@ -108,6 +108,10 @@ local Mappings = {
             ['Test keymap'] = {
                 command = "<Leader>test",
                 mapping = ":echo 'This is a test keymap!'<CR>"
+            },
+            ['Clear search highlight'] = {
+                command = "<Esc><Esc>",
+                mapping = ":noh<CR>"
             }
         }
     },

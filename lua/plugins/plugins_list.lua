@@ -41,6 +41,7 @@ local plugins = {
     barbar = "romgrk/barbar.nvim",
 
     -- IDE
+    goto_preview = "rmagatti/goto-preview",
     toggleterm = "akinsho/toggleterm.nvim",
     guess_indent = "NMAC427/guess-indent.nvim",
     wilder = "gelguy/wilder.nvim",

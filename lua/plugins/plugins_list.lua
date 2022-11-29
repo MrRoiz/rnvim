@@ -45,6 +45,7 @@ local plugins = {
     toggleterm = "akinsho/toggleterm.nvim",
     guess_indent = "NMAC427/guess-indent.nvim",
     wilder = "gelguy/wilder.nvim",
+    ufo = "kevinhwang91/nvim-ufo",
 
     -- Typing
     surround = "tpope/vim-surround",

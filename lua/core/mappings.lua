@@ -218,6 +218,24 @@ local Mappings = {
                 mapping = ":DiffviewClose<CR>"
             }
         }
+    },
+
+    ufo = {
+        plugin = true,
+        n = {
+            ["Open all folds"] = {
+                command = "zR",
+                mapping = function()
+                    require('ufo').openAllFolds()
+                end
+            },
+            ["Close all folds"] = {
+                command = "zM",
+                mapping = function()
+                    require('ufo').closeAllFolds()
+                end
+            }
+        }
     }
 }
 

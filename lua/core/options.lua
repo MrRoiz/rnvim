@@ -27,3 +27,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.incsearch = true
 
+-- Folding
+opt.foldlevel = 20
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"

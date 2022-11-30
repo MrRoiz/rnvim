@@ -23,10 +23,10 @@ local Mappings = {
 
     neovim = {
         n = {
-            ['Re-source current luafile'] = {
-                command = "<F5>",
-                mapping = ":luafile %<CR>"
-            },
+            -- ['Re-source current luafile'] = {
+            --     command = "<F5>",
+            --     mapping = ":luafile %<CR>"
+            -- },
             ["Sync Packer"] = {
                 command = "<F4>",
                 mapping = ":PackerSync<CR>"
@@ -112,6 +112,10 @@ local Mappings = {
             ['Clear search highlight'] = {
                 command = "<Esc><Esc>",
                 mapping = ":noh<CR>"
+            },
+            ['Update buffer'] = {
+                command = "<F5>",
+                mapping = ":bufdo e!<CR>"
             }
         }
     },
@@ -121,7 +125,7 @@ local Mappings = {
         n = {
             ['Open Nvimtree'] = {
                 command = "<C-b>",
-                mapping = ":NvimTreeToggle<CR>"
+                mapping = ":NvimTreeFindFileToggle<CR>"
             },
             ['Focus Nvimtree'] = {
                 command = "<Leader>b",

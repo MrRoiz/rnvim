@@ -5,9 +5,9 @@ Custom neovim configuration
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) bynary is required just to use Telescope live_grep
 
 ### Mason Dependencies
-- LSP: typescript-language-server, lua-language-server, pyright
+- LSP: typescript-language-server, lua-language-server, pyright, vscode-json-language-server
 - Linters: eslint_d
-- Formatters: prettierd
+- Formatters: prettierd, slq-formatter, stylua
 
 ### Octo Dependencies
 - [Github CLI](https://cli.github.com/) to active the integration with github

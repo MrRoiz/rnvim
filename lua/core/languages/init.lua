@@ -3,4 +3,6 @@ return {
     "lua",
     "python",
     "javascript_typescript",
+    "json",
+    "sql",
 }

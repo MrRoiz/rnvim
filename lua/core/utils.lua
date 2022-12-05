@@ -44,7 +44,7 @@ M.parse_languages_to_treesitter = function ()
             table.insert(parsed_languages, "tsx")
             table.insert(parsed_languages, "javascript")
             table.insert(parsed_languages, "typescript")
-        else
+        elseif language ~= "sql" then -- TODO: Check when sql is available for treesitter
             table.insert(parsed_languages, language)
         end
     end

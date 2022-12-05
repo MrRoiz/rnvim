@@ -240,6 +240,16 @@ local Mappings = {
                 end
             }
         }
+    },
+
+    null_ls = {
+        plugin = true,
+        n = {
+            ["Format file"] = {
+                command = "<A-F>",
+                mapping = ":lua vim.lsp.buf.format({ timeout_ms = 5000 })<CR>"
+            }
+        }
     }
 }
 

@@ -30,6 +30,10 @@ local Mappings = {
             ["Sync Packer"] = {
                 command = "<F4>",
                 mapping = ":PackerSync<CR>"
+            },
+            ['Update buffer'] = {
+                command = "<F5>",
+                mapping = ":bufdo e!<CR>"
             }
         }
     },
@@ -75,27 +79,29 @@ local Mappings = {
                 command = "<C-s>",
                 mapping = "<Esc>:w<CR>li"
             },
-            ['Exit insert mode'] = {
-                command = "<C-q>",
-                mapping = "<Esc><Esc>"
-            }
+            -- ['Exit insert mode'] = {
+            --     command = "<C-q>",
+            --     mapping = "<Esc><Esc>"
+            -- }
         },
         n = {
             ['Save current file'] = {
                 command = "<C-s>",
                 mapping = ":w<CR>"
             },
-            ['Undo'] = {
-                command = "<C-z>",
-                mapping = "u"
-            },
+            -- ['Undo'] = {
+            --     command = "<C-z>",
+            --     mapping = "u"
+            -- },
+            -- ['Redo'] = {
+            --     command = "<C-y>",
+            --     mapping = "<C-r>"
+            -- },
+
+            -- Need to check this mapping out, not working properly
             ['Select all'] = {
                 command = "<Leader>a",
                 mapping = "ggvG<S-End>"
-            },
-            ['Redo'] = {
-                command = "<C-y>",
-                mapping = "<C-r>"
             },
             ['Move line up'] = {    -- Issues when moving at the end of files
                 command = "<A-k>",
@@ -110,13 +116,9 @@ local Mappings = {
                 mapping = ":echo 'This is a test keymap!'<CR>"
             },
             ['Clear search highlight'] = {
-                command = "<Esc><Esc>",
+                command = "_",
                 mapping = ":noh<CR>"
             },
-            ['Update buffer'] = {
-                command = "<F5>",
-                mapping = ":bufdo e!<CR>"
-            }
         }
     },
 

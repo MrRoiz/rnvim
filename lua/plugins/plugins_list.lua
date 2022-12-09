@@ -38,7 +38,7 @@ local plugins = {
     plenary = 'nvim-lua/plenary.nvim',
     nvimtree = "kyazdani42/nvim-tree.lua",
     telescope = "nvim-telescope/telescope.nvim",
-    barbar = "romgrk/barbar.nvim",
+    bufferline = "akinsho/bufferline.nvim",
 
     -- IDE
     goto_preview = "rmagatti/goto-preview",

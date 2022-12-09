@@ -172,20 +172,20 @@ local Mappings = {
         }
     },
 
-    barbar = {
+    bufferline = {
         plugin = true,
         n = {
             ['Move to the next buffer'] = {
                 command = "<A-l>",
-                mapping = ":BufferNext<CR>"
+                mapping = ":BufferLineCycleNext<CR>"
             },
             ['Move to the previous buffer'] = {
                 command = "<A-h>",
-                mapping = ":BufferPrevious<CR>"
+                mapping = ":BufferLineCyclePrev<CR>"
             },
             ['Close current buffer'] = {
                 command = "<A-w>",
-                mapping = ":BufferClose<CR>"
+                mapping = ":bd<CR>"
             }
         }
     },

@@ -7,6 +7,7 @@ return function()
     vim.opt.termguicolors = true
     bufferline.setup({
         options = {
+            diagnostics = "nvim_lsp",
             offsets = {
                 {
                     filetype = "NvimTree",

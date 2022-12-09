@@ -7,9 +7,6 @@ return function()
     vim.opt.termguicolors = true
     bufferline.setup({
         options = {
-            indicator = {
-                style = "underline",
-            },
             offsets = {
                 {
                     filetype = "NvimTree",
@@ -22,12 +19,6 @@ return function()
                     text = "Source Control",
                     text_align = "center",
                     separator = true,
-                },
-            },
-            highlights = {
-                buffer_selected = {
-                    bold = false,
-                    italic = false,
                 },
             },
             separator_style = "slant",

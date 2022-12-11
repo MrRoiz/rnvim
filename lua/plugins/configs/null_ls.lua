@@ -18,7 +18,7 @@ return function()
 			diagnostics.eslint_d,
 
 			-- Formatters
-			formatting.prettierd,
+			formatting.prettier,
 			formatting.stylua,
             formatting.sql_formatter,
 		},

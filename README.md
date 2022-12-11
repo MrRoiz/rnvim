@@ -13,7 +13,7 @@ Custom neovim configuration
 ### Mason Dependencies
 - LSP: typescript-language-server, lua-language-server, pyright, vscode-json-language-server
 - Linters: eslint_d
-- Formatters: prettierd, slq-formatter, stylua
+- Formatters: prettier, slq-formatter, stylua
 
 ### Octo Dependencies
 - [Github CLI](https://cli.github.com/) to active the integration with github

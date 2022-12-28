@@ -15,7 +15,8 @@ local plugins = {
     autopairs = "windwp/nvim-autopairs",
     comment = "numToStr/Comment.nvim",
     autotag = "windwp/nvim-ts-autotag",
-    fidget = "j-hui/fidget.nvim",
+    -- Disabled because an issue when opening Telescope and Fidget is still loading
+    -- fidget = "j-hui/fidget.nvim",
 
     -- Null-ls Stuff
     null_ls = "jose-elias-alvarez/null-ls.nvim",

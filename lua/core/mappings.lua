@@ -34,6 +34,10 @@ local Mappings = {
             ['Update buffer'] = {
                 command = "<F5>",
                 mapping = ":bufdo e!<CR>"
+            },
+            ['Where am I'] = {
+                command = "<Leader>wai",
+                mapping = ":echo expand('%:p')<CR>"
             }
         }
     },

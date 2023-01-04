@@ -37,6 +37,7 @@ return function()
 			formatting.prettier,
 			formatting.stylua,
 			formatting.sql_formatter,
+			formatting.black
 		},
 	})
 end

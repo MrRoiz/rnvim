@@ -107,14 +107,6 @@ local Mappings = {
                 command = "<Leader>a",
                 mapping = "ggvG<S-End>"
             },
-            ['Move line up'] = {    -- Issues when moving at the end of files
-                command = "<A-k>",
-                mapping = "ddkP"
-            },
-            ['Move line down'] = {  -- Issues when moving at the end of files
-                command = "<A-j>",
-                mapping = "ddp"
-            },
             ['Test keymap'] = {
                 command = "<Leader>test",
                 mapping = ":echo 'This is a test keymap!'<CR>"

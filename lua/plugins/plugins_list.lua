@@ -48,6 +48,7 @@ local plugins = {
     wilder = "gelguy/wilder.nvim",
     ufo = "kevinhwang91/nvim-ufo",
     which_key = "folke/which-key.nvim",
+    mini_move = "echasnovski/mini.nvim",
 
     -- Typing
     surround = "tpope/vim-surround",

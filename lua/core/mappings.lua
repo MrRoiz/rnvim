@@ -172,15 +172,15 @@ local Mappings = {
         plugin = true,
         n = {
             ['Move to the next buffer'] = {
-                command = "<A-l>",
+                command = "<M-l>",
                 mapping = ":BufferLineCycleNext<CR>"
             },
             ['Move to the previous buffer'] = {
-                command = "<A-h>",
+                command = "<M-h>",
                 mapping = ":BufferLineCyclePrev<CR>"
             },
             ['Close current buffer'] = {
-                command = "<A-w>",
+                command = "<M-w>",
                 mapping = ":bd<CR>"
             }
         }
@@ -244,7 +244,7 @@ local Mappings = {
         plugin = true,
         n = {
             ["Format file"] = {
-                command = "<A-F>",
+                command = "<M-F>",
                 mapping = ":lua vim.lsp.buf.format({ timeout_ms = 5000 })<CR>"
             }
         }

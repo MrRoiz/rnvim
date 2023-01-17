@@ -172,7 +172,9 @@ local Mappings = {
         plugin = true,
         n = {
             ['Move to the next buffer'] = {
-                command = {"<M-l>", " "},
+                -- Next in Mac is disabled because in Mac is an space like our Leader key
+                -- command = {"<M-l>", " "},
+                command = "<M-l>",
                 mapping = ":BufferLineCycleNext<CR>"
             },
             ['Move to the previous buffer'] = {

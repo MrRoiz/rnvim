@@ -8,7 +8,13 @@ M.load_mappings = function(plugin_name)
         for mode, commands in pairs(mode_group) do
             if mode ~= 'plugin' then
                 for alias, command_definition in pairs(commands) do
-                    set_keymap(mode, command_definition.command, command_definition.mapping)
+                    if type(command_definition.command) == 'table' then
+                        for _, command in pairs(command_definition.command) do
+                            set_keymap(mode, command, command_definition.mapping)
+                        end
+                    else
+                        set_keymap(mode, command_definition.command, command_definition.mapping)
+                    end
                 end
             end
         end

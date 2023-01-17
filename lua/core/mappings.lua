@@ -10,7 +10,7 @@
 
                 [short mode name]: {
                     [alias of the mapping (just to indentify them easier)]: {
-                        command: "Command you want to use for this mapping"
+                        command: "Command you want to use for this mapping can also be a Table to set multiple mappings to one command (useful when using PC and Mac)"
                         mapping: "Command to be executed when you press the command you set above"
                     }
                 }
@@ -172,15 +172,15 @@ local Mappings = {
         plugin = true,
         n = {
             ['Move to the next buffer'] = {
-                command = "<M-l>",
+                command = {"<M-l>", " "},
                 mapping = ":BufferLineCycleNext<CR>"
             },
             ['Move to the previous buffer'] = {
-                command = "<M-h>",
+                command = {"<M-h>", "™"},
                 mapping = ":BufferLineCyclePrev<CR>"
             },
             ['Close current buffer'] = {
-                command = "<M-w>",
+                command = {"<M-w>", "æ"},
                 mapping = ":bd<CR>"
             }
         }
@@ -244,7 +244,7 @@ local Mappings = {
         plugin = true,
         n = {
             ["Format file"] = {
-                command = "<M-F>",
+                command = {"<M-F>", "ﬁ"},
                 mapping = ":lua vim.lsp.buf.format({ timeout_ms = 5000 })<CR>"
             }
         }

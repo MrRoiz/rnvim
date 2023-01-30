@@ -17,5 +17,8 @@ return function()
             --     enable = true,
             -- },
         },
+        git = {
+            ignore = false
+        }
     })
 end

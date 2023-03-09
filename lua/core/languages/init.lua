@@ -5,5 +5,7 @@ return {
     "javascript_typescript",
     "json",
     "sql",
-    "vue"
+    "vue",
+    "svelte",
+    "html"
 }

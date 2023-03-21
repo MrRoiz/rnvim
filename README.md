@@ -9,9 +9,12 @@ Custom neovim configuration
 
 ## Dependencies
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) bynary is required just to use Telescope live_grep
+- A C++ compiler is required for Tresitter (tested with g++)
+- A [Nerd Font](https://www.nerdfonts.com/) is required on your preferred terminal emulator to handle icons
+- [Node with NPM](https://nodejs.org/es) is required to install some lsp's
 
 ### Mason Dependencies
-- LSP: typescript-language-server, lua-language-server, pyright, vscode-json-language-server, vue-language-server, svelte-language-server, html-lsp
+- LSP: Auto installed with [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
 - Linters: eslint_d
 - Formatters: prettier, slq-formatter, stylua, black
 

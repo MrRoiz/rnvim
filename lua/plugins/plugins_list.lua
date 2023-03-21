@@ -12,6 +12,7 @@ local plugins = {
     -- LSP and Autocomplete
     lsp_config = "neovim/nvim-lspconfig",
     mason = 'williamboman/mason.nvim',
+    mason_lsp_config = "williamboman/mason-lspconfig.nvim",
     autopairs = "windwp/nvim-autopairs",
     comment = "numToStr/Comment.nvim",
     autotag = "windwp/nvim-ts-autotag",

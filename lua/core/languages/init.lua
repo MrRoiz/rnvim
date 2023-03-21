@@ -7,5 +7,6 @@ return {
     "sql",
     "vue",
     "svelte",
-    "html"
+    "html",
+    "bash",
 }

@@ -4,7 +4,7 @@ require("plugins")
 
 local function open_nvim_tree()
   local ok, api = pcall(require, "nvim-tree.api")
-  if not ok then
+  if ok then
     api.tree.open()
   end
 end

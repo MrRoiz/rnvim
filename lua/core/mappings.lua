@@ -206,7 +206,16 @@ local Mappings = {
             ['Submit PR review'] = {
                 command = "<Leader>orss",
                 mapping = ":Octo review submit<CR>"
+            },
+            ['Close current review'] = {
+                command = "<Leader>orc",
+                mapping = ":Octo review close<CR>"
+            },
+            ['Reload current PR'] = {
+                command = "<Leader>opr",
+                mapping = ":Octo pr reload<CR>"
             }
+
         }
     },
 

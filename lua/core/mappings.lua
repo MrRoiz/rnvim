@@ -227,7 +227,7 @@ local Mappings = {
                 mapping = ":DiffviewOpen<CR>"
             },
             ["Close diffview"] = {
-                command = "<Leader>dvc",
+                command = "<Leader>dc",
                 mapping = ":DiffviewClose<CR>"
             }
         }

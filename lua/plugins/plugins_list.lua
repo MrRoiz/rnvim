@@ -8,6 +8,8 @@ local plugins = {
     dressing = "stevearc/dressing.nvim",
     scrollbar = "petertriho/nvim-scrollbar",
     gruvbox = "ellisonleao/gruvbox.nvim",
+    colorizer = "norcalli/nvim-colorizer.lua",
+    todo_comments = "folke/todo-comments.nvim",
 
     -- LSP and Autocomplete
     lsp_config = "neovim/nvim-lspconfig",

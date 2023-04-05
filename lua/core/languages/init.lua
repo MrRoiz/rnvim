@@ -9,4 +9,5 @@ return {
     "svelte",
     "html",
     "bash",
+    "vim"
 }

@@ -1,5 +1,6 @@
 local opt = vim.opt
 local g = vim.g
+local cmd = vim.cmd
 
 opt.title = true
 opt.clipboard = "unnamedplus"
@@ -26,3 +27,5 @@ opt.hlsearch = true
 opt.ignorecase = true
 opt.smartcase = true
 opt.incsearch = true
+
+cmd("set termguicolors")

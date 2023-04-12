@@ -34,6 +34,11 @@ return {
         lsp = false,
         treesitter = {"markdown", "markdown_inline"}
     },
+    -- TODO: Find a way to attach this lsp only when the project has tailwind
+    tailwind = {
+        lsp = "tailwindcss",
+        treesitter = false
+    },
     "html",
     "svelte",
 }

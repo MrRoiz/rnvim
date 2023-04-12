@@ -30,6 +30,10 @@ return {
     vim = {
         lsp = false
     },
+    markdown = {
+        lsp = false,
+        treesitter = {"markdown", "markdown_inline"}
+    },
     "html",
     "svelte",
 }

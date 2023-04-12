@@ -1,3 +1,0 @@
-return {
-    server = "volar"
-}

@@ -39,16 +39,8 @@ return function()
             capabilities = capabilities
         }
 
-        if lsp_definition['server'] then
-            setup['server'] = lsp_definition['sever']
-        end
-
-        if lsp_definition['settings'] then
-            setup['settings'] = lsp_definition['settings']
-        end
-
-        if lsp_definition['filetypes'] then
-            setup['filetypes'] = lsp_definition['filetypes']
+        for key, value in pairs(lsp_definition) do
+            setup[key] = value
         end
 
         lspconfig[lsp_definition['server']].setup(setup)

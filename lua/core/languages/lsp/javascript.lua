@@ -1,5 +1,4 @@
 return {
-    server = "tsserver",
     settings = {
         diagnostics = {
             ignoredCodes = {

@@ -1,5 +1,4 @@
 return {
-    server = 'pyright',
     settings = {
         python = {
             analysis = {

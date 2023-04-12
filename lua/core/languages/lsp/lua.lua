@@ -1,5 +1,4 @@
 return {
-    server = "lua_ls",
     settings = {
         Lua = {
             diagnostics = {

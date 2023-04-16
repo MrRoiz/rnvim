@@ -1,6 +1,6 @@
 require('core/options')
 require("core/utils").load_mappings()
-require("plugins")
+require("core/lazy")
 
 local function open_nvim_tree()
   local ok, api = pcall(require, "nvim-tree.api")

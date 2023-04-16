@@ -10,6 +10,7 @@ g.background = "dark"
 opt.relativenumber = true
 opt.nu = true
 opt.cursorline = true
+opt.termguicolors = true
 
 -- Text
 opt.expandtab = true
@@ -27,5 +28,3 @@ opt.hlsearch = true
 opt.ignorecase = true
 opt.smartcase = true
 opt.incsearch = true
-
-cmd("set termguicolors")

@@ -17,8 +17,6 @@
 ]]
 
 local Mappings = {
-    leader_key = " ",
-
     neovim = {
         n = {
             -- ['Re-source current luafile'] = {

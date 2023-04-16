@@ -1,13 +1,13 @@
 {
-  "bufferline.nvim": { "branch": "main", "commit": "243893ba9d5d1049dd451a25cab32ec7f8f67bcf" },
+  "diffview.nvim": { "branch": "main", "commit": "63720aa5a70ce4aa386be407d0e612cd9e63861a" },
   "dressing.nvim": { "branch": "master", "commit": "0e3e1eba147fee6e638ac1ac28f0495bcde17319" },
   "indent-blankline.nvim": { "branch": "master", "commit": "018bd04d80c9a73d399c1061fa0c3b14a7614399" },
   "kyazdani42-nvim-web-devicons": { "branch": "master", "commit": "4ec26d67d419c12a4abaea02f1b6c57b40c08d7e" },
-  "lazy.nvim": { "branch": "main", "commit": "57cce98dfdb2f2dd05a0567d89811e6d0505e13b" },
+  "lazy.nvim": { "branch": "main", "commit": "eddee830ede0f95ced9802ca9abd3f8f662e5cc5" },
   "lualine.nvim": { "branch": "master", "commit": "84ffb80e452d95e2c46fa29a98ea11a240f7843e" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "6c8f7afd6162fa27719f9da9792e4314da41c501" },
-  "mason.nvim": { "branch": "main", "commit": "61f023cdbdf0834226525b6309f438f1d7b2e61e" },
-  "neovim-ayu": { "branch": "master", "commit": "40e96a9c66791b1ec74726ccd11dd162e7989523" },
+  "mason.nvim": { "branch": "main", "commit": "e24d594dc7dbe08305a881c8e7348d4d45445ffe" },
+  "neovim-ayu": { "branch": "master", "commit": "762ff24bd429fbb1c1e20b13043b4c8f0266bcf1" },
   "nvim-autopairs": { "branch": "master", "commit": "7470af886ffb3df32800e5ef9c072a6cd825770d" },
   "nvim-colorizer.lua": { "branch": "master", "commit": "36c610a9717cc9ec426a07c8e6bf3b3abcb139d6" },
   "nvim-lspconfig": { "branch": "master", "commit": "eddaef928c1e1dd79a96f5db45f2fd7f2efe7ea0" },
@@ -19,5 +19,5 @@
   "todo-comments.nvim": { "branch": "main", "commit": "8febc60a76feefd8203077ef78b6a262ea1a41f9" },
   "toggleterm.nvim": { "branch": "main", "commit": "1c5996ee3c30b54751093fe68d40676859e7778f" },
   "vim-illuminate": { "branch": "master", "commit": "a2907275a6899c570d16e95b9db5fd921c167502" },
-  "which-key.nvim": { "branch": "main", "commit": "8b1bb02fed6fd5c1f7e851959eaa1d0e8738da7f" }
+  "which-key.nvim": { "branch": "main", "commit": "7daa8ca2a5acf11731c40c624635d501dd708933" }
 }

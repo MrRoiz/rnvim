@@ -3,6 +3,7 @@ return {
 	dependencies = {
 		"nvim-tree-nvim-web-devicons",
 	},
+	cmd = { "NvimTreeToggle", "NvimTreeFindFileToggle" },
 	opts = {
 		actions = {
 			open_file = {

@@ -1,13 +1,12 @@
 local opt = vim.opt
 local g = vim.g
-local cmd = vim.cmd
 
 opt.title = true
 opt.clipboard = "unnamedplus"
 
 -- Interface
 g.background = "dark"
-opt.relativenumber = true
+-- opt.relativenumber = true
 opt.nu = true
 opt.cursorline = true
 opt.termguicolors = true

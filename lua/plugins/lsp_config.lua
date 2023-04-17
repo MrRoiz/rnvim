@@ -24,6 +24,7 @@ return {
 			vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
 			-- vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 		end,
+		capabilities = require("cmp_nvim_lsp").default_capabilities()
 	},
 	config = function(plugin, opts)
 		local LSP_SERVERS = require("core/languages/lsp")()
@@ -32,7 +33,7 @@ return {
 		for _, lsp_definition in pairs(LSP_SERVERS) do
 			local setup = {
 				on_attach = opts.on_attach,
-				-- capabilities = capabilities,
+				capabilities = opts.capabilities,
 			}
 
 			for key, value in pairs(lsp_definition) do

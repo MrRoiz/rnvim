@@ -1,5 +1,5 @@
 # rnvim
-Custom neovim configuration
+Custom neovim configuration \
 ![image](https://user-images.githubusercontent.com/49358353/232499713-bf277724-477e-4a44-9523-50032e642bc2.png)
 
 ![image](https://user-images.githubusercontent.com/49358353/206805596-98755426-8e1a-4c0a-bde3-63a87e8af2e0.png)
@@ -9,7 +9,7 @@ Custom neovim configuration
 ![image](https://user-images.githubusercontent.com/49358353/206805883-ceff2862-4e0c-4c98-a9ae-c1e16e9af5af.png)
 
 ## Fast Startup
-Using Lazy as package manager
+Using Lazy as package manager \
 ![image](https://user-images.githubusercontent.com/49358353/232500636-074cab3f-676a-4b25-b377-29faf8d10ba1.png)
 
 

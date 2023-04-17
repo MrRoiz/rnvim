@@ -1,12 +1,10 @@
 --[[ 
     Schema:
-    
+
         Mappings {
             leader_key: "set leader key"
 
             [name of mapping group]: {
-
-                plugin: "Mark this group as a plugin, then this group won't be loaded until you ask it to in a plugin setup option"
 
                 [short mode name]: {
                     [alias of the mapping (just to indentify them easier)]: {
@@ -19,8 +17,6 @@
 ]]
 
 local Mappings = {
-    leader_key = " ",
-
     neovim = {
         n = {
             -- ['Re-source current luafile'] = {
@@ -119,7 +115,6 @@ local Mappings = {
     },
 
     nvimtree = {
-        plugin = true,
         n = {
             ['Open Nvimtree'] = {
                 command = "<C-b>",
@@ -133,7 +128,6 @@ local Mappings = {
     },
 
     toggleterm = {
-        plugin = true,
         n = {
             ['Open a floating term'] = {
                 command = "<Leader>tt",
@@ -143,7 +137,6 @@ local Mappings = {
     },
 
     telescope = {
-        plugin = true,
         n = {
             ['Open Telescope'] = {
                 command = "<Leader>ff",
@@ -169,7 +162,6 @@ local Mappings = {
     },
 
     bufferline = {
-        plugin = true,
         n = {
             ['Move to the next buffer'] = {
                 -- Next in Mac is disabled because in Mac is an space like our Leader key
@@ -189,7 +181,6 @@ local Mappings = {
     },
 
     octo = {
-        plugin = true,
         n = {
             ["List PR's"] = {
                 command = "<Leader>opl",
@@ -220,7 +211,6 @@ local Mappings = {
     },
 
     diffview = {
-        plugin = true,
         n = {
             ["Open diffview"] = {
                 command = "<Leader>dv",
@@ -234,7 +224,6 @@ local Mappings = {
     },
 
     ufo = {
-        plugin = true,
         n = {
             ["Open all folds"] = {
                 command = "zR",
@@ -252,7 +241,6 @@ local Mappings = {
     },
 
     null_ls = {
-        plugin = true,
         n = {
             ["Format file"] = {
                 command = {"<M-F>", "ﬁ"},

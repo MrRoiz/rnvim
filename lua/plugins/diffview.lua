@@ -5,7 +5,7 @@ return {
 	},
 	cmd = {
 		"DiffviewClose",
-		"DiffviewFileHistoryOpen",
+		"DiffviewFileHistory",
 		"DiffviewFocusFiles",
 		"DiffviewLog",
 		"DiffviewOpen",

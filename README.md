@@ -16,7 +16,7 @@ Using Lazy as package manager \
 ## Dependencies
 - Neovim > v0.7
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) bynary is required just to use Telescope live_grep
-- A C++ compiler is required for Tresitter (tested with g++)
+- A C compiler is required for Tresitter (tested with g++) [Check this out if you're a Windows user](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)
 - A [Nerd Font](https://www.nerdfonts.com/) is required on your preferred terminal emulator to handle icons
 - [Node with NPM](https://nodejs.org/es) is required to install some lsp's
 

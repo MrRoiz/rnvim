@@ -69,26 +69,12 @@ local Mappings = {
 				command = "<C-s>",
 				mapping = "<Esc>:w<CR>li",
 			},
-			-- ['Exit insert mode'] = {
-			--     command = "<C-q>",
-			--     mapping = "<Esc><Esc>"
-			-- }
 		},
 		n = {
 			["Save current file"] = {
 				command = "<C-s>",
 				mapping = ":w<CR>",
 			},
-			-- ['Undo'] = {
-			--     command = "<C-z>",
-			--     mapping = "u"
-			-- },
-			-- ['Redo'] = {
-			--     command = "<C-y>",
-			--     mapping = "<C-r>"
-			-- },
-
-			-- Need to check this mapping out, not working properly
 			["Select all"] = {
 				command = "<Leader>a",
 				mapping = "ggvG<S-End>",

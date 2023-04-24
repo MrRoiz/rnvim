@@ -39,6 +39,9 @@ return {
         lsp = "tailwindcss",
         treesitter = false
     },
+    regex = {
+        lsp = false
+    },
     "html",
     "svelte",
 }

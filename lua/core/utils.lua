@@ -2,7 +2,9 @@ local M = {}
 
 M.load_mappings = function(plugin_name)
     local mappings = require("core.mappings")
-    local set_keymap = vim.keymap.set
+    local set_keymap = function(mode, command, mapping)
+        vim.keymap.set(mode, command, mapping, { silent = true })
+    end
 
     local set_mapping = function(mode_group)
         for mode, commands in pairs(mode_group) do

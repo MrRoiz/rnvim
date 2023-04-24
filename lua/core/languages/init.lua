@@ -42,6 +42,9 @@ return {
     regex = {
         lsp = false
     },
+    prisma = {
+        lsp = false
+    },
     "html",
     "svelte",
 }

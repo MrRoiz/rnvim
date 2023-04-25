@@ -127,6 +127,10 @@ local Mappings = {
 				command = "<Leader>gst",
 				mapping = ":Telescope git_status initial_mode=normal<CR>",
 			},
+			["Show git branches"] = {
+				command = "<Leader>gb",
+				mapping = ":Telescope git_branches initial_mode=normal<CR>",
+			},
 			["Open Telescope live_grep"] = {
 				command = "<Leader>fg",
 				mapping = ":Telescope live_grep<CR>",

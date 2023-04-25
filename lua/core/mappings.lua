@@ -186,13 +186,17 @@ local Mappings = {
 				mapping = ":DiffviewOpen<CR>",
 			},
 			["Close diffview"] = {
-				command = "<Leader>dc",
+				command = "<Leader>dcc",
 				mapping = ":DiffviewClose<CR>",
 			},
 			["Show Commit history with changes"] = {
 				command = "<Leader>dh",
 				mapping = ":DiffviewFileHistory<CR>",
 			},
+			["Show current file history"] = {
+				command = "<Leader>dch",
+				mapping = ":DiffviewFileHistory %<CR>"
+			}
 		},
 	},
 	ufo = {

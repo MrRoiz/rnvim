@@ -22,28 +22,31 @@ return {
         lsp = "sqlls",
     },
     vue = {
-        lsp = "volar"
+        lsp = "volar",
     },
     bash = {
-        lsp = "bashls"
+        lsp = "bashls",
     },
     vim = {
-        lsp = false
+        lsp = false,
     },
     markdown = {
         lsp = false,
-        treesitter = {"markdown", "markdown_inline"}
+        treesitter = { "markdown", "markdown_inline" },
     },
     -- TODO: Find a way to attach this lsp only when the project has tailwind
     tailwind = {
         lsp = "tailwindcss",
-        treesitter = false
+        treesitter = false,
     },
     regex = {
-        lsp = false
+        lsp = false,
     },
     prisma = {
-        lsp = false
+        lsp = false,
+    },
+    eslint = {
+        treesitter = false,
     },
     "html",
     "svelte",

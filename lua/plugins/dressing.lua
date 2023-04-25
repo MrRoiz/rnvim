@@ -1,3 +1,8 @@
 return {
-    "stevearc/dressing.nvim"
+    "stevearc/dressing.nvim",
+    opts = {
+        input = {
+            enabled = false
+        }
+    }
 }

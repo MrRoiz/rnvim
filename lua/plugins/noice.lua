@@ -25,8 +25,14 @@ return {
 			inc_rename = true,   -- enables an input dialog for inc-rename.nvim
 			lsp_doc_border = true, -- add a border to hover docs and signature help
 		},
-
 		-- NOTE: Disabled becuase of some issues with nvim-tree when saving a file multiple times
+		views = {
+			mini = {
+				position = {
+					row = -2,
+				},
+			},
+		},
 		messages = {
 			enabled = false,
 		},

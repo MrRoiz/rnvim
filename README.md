@@ -13,22 +13,21 @@ Using Lazy as package manager \
 ![image](https://user-images.githubusercontent.com/49358353/232500636-074cab3f-676a-4b25-b377-29faf8d10ba1.png)
 
 
-## Dependencies
+## Dependencies ⚡️
 - Neovim > v0.7
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) bynary is required just to use Telescope live_grep
 - A C compiler is required for Tresitter (tested with g++) [Check this out if you're a Windows user](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)
 - A [Nerd Font](https://www.nerdfonts.com/) is required on your preferred terminal emulator to handle icons
 - [Node with NPM](https://nodejs.org/es) is required to install some lsp's
 
-### Mason Dependencies
+### Mason Dependencies ⚡️
 - LSP: Auto installed with [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
-- Linters: eslint_d
 - Formatters: prettier, slq-formatter, stylua, black
 
-### Octo Dependencies
+### Octo Dependencies ⚡️
 - [Github CLI](https://cli.github.com/) to active the integration with github
 
-### Test it on a Docker container
+### Test it on a Docker container 🐋
 ```console
 docker run -w /root -it --rm alpine:edge sh -uelic '
 apk add git npm neovim ripgrep alpine-sdk --update

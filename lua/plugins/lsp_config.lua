@@ -43,6 +43,7 @@ return {
 	config = function(plugin, opts)
 		local LSP_SERVERS = require("core/languages/lsp")()
 		local lspconfig = require("lspconfig")
+		require("core.utils").set_diagnostic_config()
 
 		for _, lsp_definition in pairs(LSP_SERVERS) do
 			local setup = {

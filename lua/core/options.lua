@@ -32,7 +32,3 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.incsearch = true
 
--- Add borders to diagnostic windows
-vim.diagnostic.config({
-	float = { border = "single" },
-})

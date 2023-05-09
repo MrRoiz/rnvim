@@ -31,16 +31,25 @@ local Mappings = {
 	},
 	navigation = {
 		i = {
-			["Go to the beggining of the line"] = {
-				command = "<C-b>",
-				mapping = "<ESC>^i",
+			["go to the beggining of the line"] = {
+				command = "<c-b>",
+				mapping = "<esc>^i",
 			},
-			["Go to the end of the line"] = {
-				command = "<C-e>",
-				mapping = "<End>",
+			["go to the end of the line"] = {
+				command = "<c-e>",
+				mapping = "<end>",
 			},
 		},
 		n = {
+			-- FIXME: Disabled because of conflicts with nvim-tree mappings
+			-- ["go to the beggining of the line"] = {
+			-- 	command = "<c-b>",
+			-- 	mapping = "^",
+			-- },
+			-- ["go to the end of the line"] = {
+			-- 	command = "<c-e>",
+			-- 	mapping = "$",
+			-- },
 			["Quit Nvim"] = {
 				command = "<C-q>",
 				mapping = ":q<CR>",
@@ -62,6 +71,16 @@ local Mappings = {
 				mapping = ":set rnu!<CR>",
 			},
 		},
+		v = {
+			["Move down faster"] = {
+				command = "<C-j>",
+				mapping = "10j",
+			},
+			["Move up faster"] = {
+				command = "<C-k>",
+				mapping = "10k",
+			},
+		}
 	},
 	general = {
 		i = {

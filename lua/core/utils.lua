@@ -2,8 +2,8 @@ local M = {}
 
 M.load_mappings = function(plugin_name)
 	local mappings = require("core.mappings")
-	local set_keymap = function(mode, command, mapping)
-		vim.keymap.set(mode, command, mapping, { silent = true })
+	local set_keymap = function(mode, command, mapping, desc)
+		vim.keymap.set(mode, command, mapping, { silent = true, desc = desc })
 	end
 
 	local set_mapping = function(mode_group)
@@ -12,10 +12,10 @@ M.load_mappings = function(plugin_name)
 				for alias, command_definition in pairs(commands) do
 					if type(command_definition.command) == "table" then
 						for _, command in pairs(command_definition.command) do
-							set_keymap(mode, command, command_definition.mapping)
+							set_keymap(mode, command, command_definition.mapping, alias)
 						end
 					else
-						set_keymap(mode, command_definition.command, command_definition.mapping)
+						set_keymap(mode, command_definition.command, command_definition.mapping, alias)
 					end
 				end
 			end

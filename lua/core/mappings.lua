@@ -41,15 +41,14 @@ local Mappings = {
 			},
 		},
 		n = {
-			-- FIXME: Disabled because of conflicts with nvim-tree mappings
-			-- ["go to the beggining of the line"] = {
-			-- 	command = "<c-b>",
-			-- 	mapping = "^",
-			-- },
-			-- ["go to the end of the line"] = {
-			-- 	command = "<c-e>",
-			-- 	mapping = "$",
-			-- },
+			["go to the beggining of the line"] = {
+				command = "B",
+				mapping = "^",
+			},
+			["go to the end of the line"] = {
+				command = "E",
+				mapping = "$",
+			},
 			["Quit Nvim"] = {
 				command = "<C-q>",
 				mapping = ":q<CR>",
@@ -61,14 +60,6 @@ local Mappings = {
 			["Move up faster"] = {
 				command = "<C-k>",
 				mapping = "10k",
-			},
-			["Toggle line number"] = {
-				command = "<Leader>n",
-				mapping = ":set nu!<CR>",
-			},
-			["Toggle relative line number"] = {
-				command = "<Leader>rn",
-				mapping = ":set rnu!<CR>",
 			},
 		},
 		v = {
@@ -113,10 +104,6 @@ local Mappings = {
 			["Open Nvimtree"] = {
 				command = "<C-b>",
 				mapping = ":NvimTreeFindFileToggle<CR>",
-			},
-			["Focus Nvimtree"] = {
-				command = "<Leader>b",
-				mapping = ":NvimTreeFocus<CR>",
 			},
 		},
 	},
@@ -246,6 +233,28 @@ local Mappings = {
 			},
 		},
 	},
+	nvim_spectre = {
+		n = {
+			["Open Spectre"] = {
+				command = "<Leader>ss",
+				mapping = ":lua require('spectre').open()<CR>"
+			},
+			["Search current word with Spectre"] = {
+				command = "<Leader>sw",
+				mapping = ":lua require('spectre').open_visual({select_word=true})<CR>"
+			},
+			["Search on current file with Spectre"] = {
+				command = "<Leader>sf",
+				mapping = ":lua require('spectre').open_file_search({select_word=true})<CR>"
+			}
+		},
+		v = {
+			["Search on current file with Spectre"] = {
+				command = "<Leader>sw",
+				mapping = "<esc><cmd>lua require('spectre').open_visual()<CR>"
+			}
+		}
+	}
 }
 
 return Mappings

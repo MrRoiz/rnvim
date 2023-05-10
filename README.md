@@ -16,9 +16,10 @@ Using Lazy as package manager \
 
 
 ## Dependencies 🧩
-- Neovim > v0.7
-- [Ripgrep](https://github.com/BurntSushi/ripgrep) bynary is required just to use Telescope live_grep
-- A C compiler is required for Tresitter (tested with g++) [Check this out if you're a Windows user](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)
+- [Neovim](https://github.com/neovim/neovim) > v0.7
+- [Ripgrep](https://github.com/BurntSushi/ripgrep) bynary is required just to use [Telescope](https://github.com/nvim-pack/nvim-spectre) live_grep and [nvim-spectre](https://github.com/nvim-pack/nvim-spectre)
+- [Sed](https://www.gnu.org/software/sed/) binary is required to use [nvim-spectre](https://github.com/nvim-pack/nvim-spectre)
+- A C compiler is required for Tresitter (tested with [g++](https://gcc.gnu.org/)) - [Check this out if you're a Windows user](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)
 - A [Nerd Font](https://www.nerdfonts.com/) is required on your preferred terminal emulator to handle icons
 - [Node with NPM](https://nodejs.org/es) is required to install some lsp's
 
@@ -29,7 +30,7 @@ Using Lazy as package manager \
 ### Octo Dependencies 🧩
 - [Github CLI](https://cli.github.com/) to active the integration with github
 
-### Test it on a Docker container 🐋
+### Try it out on a Docker container 🐋
 ```console
 docker run -w /root -it --rm alpine:edge sh -uelic '
 apk add git npm neovim ripgrep alpine-sdk --update

@@ -1,12 +1,10 @@
 return {
 	{
-		"Shatur/neovim-ayu",
+		"MrRoiz/neovim-ayu",
 		lazy = false,
 		priority = 1000,
-		-- enabled= false,
 		config = function()
 			require("ayu").colorscheme()
-			vim.cmd("highlight LineNr guifg=#45454f")
 		end,
 	},
 	{

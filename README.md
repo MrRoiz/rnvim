@@ -23,10 +23,6 @@ Using Lazy as package manager \
 - A [Nerd Font](https://www.nerdfonts.com/) is required on your preferred terminal emulator to handle icons
 - [Node with NPM](https://nodejs.org/es) is required to install some lsp's
 
-### Mason Dependencies 🧩
-- LSP: Auto installed with [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
-- Formatters: prettier, slq-formatter, stylua, black
-
 ### Octo Dependencies 🧩
 - [Github CLI](https://cli.github.com/) to active the integration with github
 

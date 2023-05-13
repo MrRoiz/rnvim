@@ -1,24 +1,18 @@
 return {
-    "jose-elias-alvarez/null-ls.nvim",
-    opts = function()
-        local null_ls = require("null-ls")
+	"jose-elias-alvarez/null-ls.nvim",
+	opts = function()
+		local null_ls = require("null-ls")
+		local formatters = require("core.utils").parse_formatters()
 
-        local formatting = null_ls.builtins.formatting
-        -- local code_actions = null_ls.builtins.code_actions
-        -- local diagnostics = null_ls.builtins.diagnostics
+		local sources = {}
 
-        return {
-            sources = {
-                -- TODO: Find a way to discard words on cspell or find other linter for spelling
-                -- diagnostics.cspell,
-                -- code_actions.cspell,
+		local formatting = null_ls.builtins.formatting
+		for key, formatter in pairs(formatters) do
+			table.insert(sources, formatting[formatter])
+		end
 
-                -- Formatters
-                formatting.prettier,
-                formatting.stylua,
-                formatting.sql_formatter,
-                formatting.black
-            },
-        }
-    end
+		return {
+			sources = sources,
+		}
+	end,
 }

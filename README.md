@@ -1,6 +1,6 @@
 <h1 align="center">rnvim</h1>
 
-Custom neovim configuration \
+### A plug and play neovim config ⚡️
 ![image](https://user-images.githubusercontent.com/49358353/236326296-3be55b89-c101-4352-81cc-b40b4fd10d19.png)
 
 ![image](https://user-images.githubusercontent.com/49358353/236327291-83c4225f-723d-4514-a4b7-8ccf11965da6.png)
@@ -26,7 +26,11 @@ Using Lazy as package manager \
 ### Octo Dependencies 🧩
 - [Github CLI](https://cli.github.com/) to active the integration with github
 
-### Try it out on a Docker container 🐋
+## Configuration 🔧
+###### Adding a language (formatter, lsp, treesitter)
+In `lua/core/languages/init.lua` you can add any language you need, and that's it rnvim will automatically install everything for you the next time you open your editor.
+
+## Try it out on a Docker container 🐋
 ```console
 docker run -w /root -it --rm alpine:edge sh -uelic '
 apk add git npm neovim ripgrep alpine-sdk --update

@@ -1,11 +1,13 @@
 return {
 	{
-		"MrRoiz/neovim-ayu",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			require("ayu").colorscheme()
-		end,
+		"loctvl842/monokai-pro.nvim",
+			config = function()  
+				require("monokai-pro").setup({
+					filter ="octagon"
+				})
+				vim.cmd([[colorscheme monokai-pro]])
+
+		end
 	},
 	{
 		"navarasu/onedark.nvim",

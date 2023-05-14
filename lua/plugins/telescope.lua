@@ -10,6 +10,16 @@ return {
             file_ignore_patterns = {
                 "node_modules",
                 "venv",
+                ".git",
+                ".cache",
+                "%.o",
+                "%.a",
+                "%.out",
+                "%.class",
+                "%.pdf",
+                "%.mkv",
+                "%.mp4",
+                "%.zip"
             },
         },
     },

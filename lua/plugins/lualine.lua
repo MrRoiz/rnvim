@@ -5,7 +5,7 @@ return {
 	},
 	opts = {
 		options = {
-			theme = "ayu_dark",
+			theme = 'monokai-pro',
 			globalstatus = true,
 			disabled_filetypes = {
 				statusline = {

@@ -64,27 +64,6 @@ M.parse_languages_to_treesitter = function()
 	return parsed_languages
 end
 
-M.parse_formatters = function()
-	local languages = require("core.languages")
-	local formatters = {}
-
-	for key, language in pairs(languages) do
-		if type(language) ~= "table" then
-			goto continue
-		end
-
-		if not M.table_contains(language, "formatter") then
-			goto continue
-		end
-
-		table.insert(formatters, language.formatter)
-
-		::continue::
-	end
-
-	return formatters
-end
-
 M.table_contains = function(given_table, given_key)
 	for key, value in pairs(given_table) do
 		if given_key == key then

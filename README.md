@@ -30,6 +30,10 @@ Using Lazy as package manager \
 ## Configuration 🔧
 ###### Adding a language (formatter, lsp, treesitter)
 In `lua/core/languages/init.lua` you can add any language you need, and that's it rnvim will automatically install everything for you the next time you open your editor.
+###### Custom config directory
+In `lua/config/` you'll have free access to some basic config for your editor (WIP improvements are comming)
+###### Vue development issues?
+If you have some issues using [Volar](https://github.com/vuejs/language-tools) you may want to add a tsdk path for vue in `lua/config/languages.lua` (see [volar lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#volar))
 
 ## Try it out on a Docker container 🐋
 ```console

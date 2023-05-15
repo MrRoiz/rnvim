@@ -107,4 +107,20 @@ M.set_diagnostic_config = function()
 	})
 end
 
+M.initialize_config = function ()
+    local options = require("config.options")
+    for key, value in pairs(options) do
+        vim.opt[key] = value
+    end
+
+	local globals = require("config.globals")
+	for key, value in pairs(globals) do
+		vim.g[key] = value
+	end
+
+	local ui_configs = require("config.ui")
+
+	vim.cmd("colorscheme "..ui_configs.theme)
+end
+
 return M

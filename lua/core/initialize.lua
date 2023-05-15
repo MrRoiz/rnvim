@@ -1,4 +1,5 @@
-require('core/options')
-vim.g.mapleader = " "
+local utils = require("core.utils")
+vim.g.mapleader = ' '
 require("core/lazy")
-require("core/utils").load_mappings()
+utils.initialize_config()
+utils.load_mappings()

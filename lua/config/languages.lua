@@ -1,0 +1,5 @@
+return {
+    vue = {
+        tsdk = ""
+    }
+}

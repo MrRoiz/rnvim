@@ -165,7 +165,7 @@ local Mappings = {
 		n = {
 			["List PR's"] = {
 				command = "<Leader>opl",
-				mapping = ":Octo pr list<CR>",
+				mapping = ":Octo pr list initial_mode=normal<CR>",
 			},
 			["Start PR review"] = {
 				command = "<Leader>ors",

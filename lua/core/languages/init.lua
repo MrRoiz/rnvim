@@ -6,53 +6,57 @@
 --  - Formatter is only an string with the formatter you'd like to use for that specific lang, it'll be autoinstalled and handle by null-ls
 --]]
 return {
-    lua = {
-        lsp = "lua_ls",
-        formatter = "stylua"
-    },
-    python = {
-        lsp = "pyright",
-        formatter = "black"
-    },
-    javascript = {
-        lsp = "tsserver",
-        treesitter = { "tsx", "javascript", "typescript" },
-        formatter = "prettier"
-    },
-    json = {
-        lsp = "jsonls",
-    },
-    sql = {
-        lsp = "sqlls",
-        formatter = "sql_formatter"
-    },
-    vue = {
-        lsp = "volar",
-    },
-    bash = {
-        lsp = "bashls",
-    },
-    vim = {
-        lsp = false,
-    },
-    markdown = {
-        lsp = false,
-        treesitter = { "markdown", "markdown_inline" },
-    },
-    -- TODO: Find a way to attach this lsp only when the project has tailwind
-    tailwind = {
-        lsp = "tailwindcss",
-        treesitter = false,
-    },
-    regex = {
-        lsp = false,
-    },
-    prisma = {
-        lsp = false,
-    },
-    eslint = {
-        treesitter = false,
-    },
-    "html",
-    "svelte",
+	lua = {
+		lsp = "lua_ls",
+		formatter = "stylua",
+	},
+	python = {
+		lsp = "pyright",
+		formatter = "black",
+	},
+	javascript = {
+		lsp = "tsserver",
+		treesitter = { "tsx", "javascript", "typescript" },
+		formatter = "prettier",
+	},
+	json = {
+		lsp = "jsonls",
+	},
+	sql = {
+		lsp = "sqlls",
+		formatter = "sql_formatter",
+	},
+	vue = {
+		lsp = "volar",
+	},
+	bash = {
+		lsp = "bashls",
+	},
+	vim = {
+		lsp = false,
+	},
+	markdown = {
+		lsp = false,
+		treesitter = { "markdown", "markdown_inline" },
+	},
+	-- TODO: Find a way to attach this lsp only when the project has tailwind
+	tailwind = {
+		lsp = "tailwindcss",
+		treesitter = false,
+	},
+	regex = {
+		lsp = false,
+	},
+	prisma = {
+		lsp = false,
+	},
+	eslint = {
+		treesitter = false,
+	},
+	css = {
+		lsp = false,
+		treesitter = { "css", "scss" },
+	},
+	"html",
+	"svelte",
 }

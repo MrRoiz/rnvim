@@ -16,22 +16,25 @@ Using Lazy as package manager \
 
 
 ## Dependencies 🧩
-- [Neovim](https://github.com/neovim/neovim) > v0.7
+- [Neovim](https://github.com/neovim/neovim) v0.9.1 tested
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) bynary is required just to use [Telescope](https://github.com/nvim-pack/nvim-spectre) live_grep and [nvim-spectre](https://github.com/nvim-pack/nvim-spectre)
 - [Sed](https://www.gnu.org/software/sed/) binary is required to use [nvim-spectre](https://github.com/nvim-pack/nvim-spectre)
 - A C compiler is required for Tresitter (tested with [g++](https://gcc.gnu.org/)) - [Check this out if you're a Windows user](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)
 - A [Nerd Font](https://www.nerdfonts.com/) is required on your preferred terminal emulator to handle icons
 - [Node with NPM](https://nodejs.org/es) is required to install some lsp's
-- If you're using linux a [Clipboard tool](https://neovim.io/doc/user/provider.html#provider-clipboard) is required, tested with Xsel
+- If you're using linux a [Clipboard tool](https://neovim.io/doc/user/provider.html#provider-clipboard) is required, tested with [Xsel](https://github.com/kfish/xsel)
 
 ### Octo Dependencies 🧩
 - [Github CLI](https://cli.github.com/) to active the integration with github
 
 ## Configuration 🔧
+
 ###### Adding a language (formatter, lsp, treesitter)
 In `lua/core/languages/init.lua` you can add any language you need, and that's it rnvim will automatically install everything for you the next time you open your editor.
+
 ###### Custom config directory
 In `lua/config/` you'll have free access to some basic config for your editor (WIP improvements are comming)
+
 ###### Vue development issues?
 If you have some issues using [Volar](https://github.com/vuejs/language-tools) you may want to add a tsdk path for vue in `lua/config/languages.lua` (see [volar lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#volar))
 

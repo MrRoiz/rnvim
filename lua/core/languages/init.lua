@@ -2,7 +2,7 @@
 --  NOTE: keys are like an alias of the language this name is also used to find the file on the lsp folder where it'll have the config for that specific language
 --  - When tables does not have lsp or tressiter values it'll take the key of that table eg. lua does not have a treesitter value, for treesitter it'll use "lua"
 --  - To omit a tressitter or a lsp for an specific language you can set the key (lsp or tressiter) and set it a value of false
---  - Treesitter values always are going to be a table (array) or strings in case more options are needed for an specific lang
+--  - Treesitter values always are going to be a table (array) of strings in case more options are needed for an specific lang
 --  - Formatter is only an string with the formatter you'd like to use for that specific lang, it'll be autoinstalled and handle by null-ls
 --]]
 return {

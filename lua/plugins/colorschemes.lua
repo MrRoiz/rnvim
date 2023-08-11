@@ -2,6 +2,7 @@ return {
 	{
 		"MrRoiz/neovim-ayu",
 		lazy = false,
+		branch = "main",
 		priority = 1000,
 	},
 	{

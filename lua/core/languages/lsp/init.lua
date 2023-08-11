@@ -29,7 +29,6 @@ return function()
 			goto continue
 		end
 
-		language = key
 		languages_parsed_with_lsp[language] = {
 			server = value.lsp,
 		}

@@ -5,7 +5,7 @@ return {
 	},
 	opts = {
 		options = {
-			theme = "ayu_dark",
+			theme = require("config.ui").lualine_theme,
 			globalstatus = true,
 			disabled_filetypes = {
 				statusline = {

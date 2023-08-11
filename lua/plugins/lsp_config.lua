@@ -52,7 +52,9 @@ return {
 			}
 
 			for key, value in pairs(lsp_definition) do
-				setup[key] = value
+				if key ~= 'server' then
+					setup[key] = value
+				end
 			end
 
 			lspconfig[lsp_definition["server"]].setup(setup)

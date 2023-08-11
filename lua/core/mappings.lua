@@ -17,6 +17,8 @@
 ]]
 
 local Mappings = {
+	-- leader_key= " ",
+
 	neovim = {
 		n = {
 			["Update buffer"] = {

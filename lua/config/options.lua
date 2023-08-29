@@ -2,7 +2,7 @@
 return {
     clipboard = "unnamedplus",
 
-    -- opt.relativenumber = true
+    -- relativenumber = true
     nu = true,
     cursorline = true,
     termguicolors = true,
@@ -16,7 +16,7 @@ return {
     wrap = false,
 
     -- Highlighting
-    -- opt.spell = true,
+    spell = true,
 
     -- Search Options
     hlsearch = true,

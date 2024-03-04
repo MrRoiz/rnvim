@@ -1,11 +1,11 @@
 return {
 	"lukas-reineke/indent-blankline.nvim",
-	version = "^2",
 	opts = {
-		show_current_context = true,
-		show_current_context_start = true,
+		indent = {
+			char = "│",
+			tab_char = "│",
+		},
+		scope = { enabled = false },
 	},
-	init = function()
-		vim.opt.list = true
-	end,
+	main = "ibl",
 }

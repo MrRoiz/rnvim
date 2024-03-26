@@ -1,4 +1,7 @@
 -- NOTE: These options here will be set in vim.opt
+
+local indendtSize = 2
+
 return {
     clipboard = "unnamedplus",
 
@@ -9,9 +12,9 @@ return {
 
     -- Text
     expandtab = true,
-    softtabstop = 4,
-    shiftwidth = 4,
-    tabstop = 4,
+    softtabstop = indendtSize,
+    shiftwidth = indendtSize,
+    tabstop = indendtSize,
     smartindent = true,
     wrap = false,
 

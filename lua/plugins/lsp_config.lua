@@ -15,7 +15,7 @@ return {
 			vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, bufopts)
 			vim.keymap.set("n", "gr", ":Telescope lsp_references initial_mode=normal<CR>", bufopts)
 			vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, bufopts)
-			vim.keymap.set("n", "<space>dd", vim.diagnostic.open_float, bufopts)
+			vim.keymap.set("n", "<space>ce", vim.diagnostic.open_float, bufopts)
 			-- vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
 			-- vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
 			-- vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)

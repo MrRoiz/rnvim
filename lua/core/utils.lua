@@ -24,8 +24,8 @@ M.load_mappings = function(plugin_name)
 
 	for command_type, mode_group in pairs(mappings) do
 		if
-			(plugin_name and mode_group["plugin"] and plugin_name == command_type)
-			or (not plugin_name and not mode_group["plugin"] and command_type ~= "leader_key")
+				(plugin_name and mode_group["plugin"] and plugin_name == command_type)
+				or (not plugin_name and not mode_group["plugin"] and command_type ~= "leader_key")
 		then
 			set_mapping(mode_group)
 		elseif command_type == "leader_key" then
@@ -95,7 +95,7 @@ M.table_contains = function(given_table, given_key)
 end
 
 M.set_diagnostic_config = function()
-	local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+	local signs = require("config.diagnostics").signs
 	for type, icon in pairs(signs) do
 		local hl = "DiagnosticSign" .. type
 		vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
@@ -107,11 +107,11 @@ M.set_diagnostic_config = function()
 	})
 end
 
-M.initialize_config = function ()
-    local options = require("config.options")
-    for key, value in pairs(options) do
-        vim.opt[key] = value
-    end
+M.initialize_config = function()
+	local options = require("config.options")
+	for key, value in pairs(options) do
+		vim.opt[key] = value
+	end
 
 	local globals = require("config.globals")
 	for key, value in pairs(globals) do
@@ -120,7 +120,7 @@ M.initialize_config = function ()
 
 	local ui_configs = require("config.ui")
 
-	vim.cmd("colorscheme "..ui_configs.theme)
+	vim.cmd("colorscheme " .. ui_configs.theme)
 end
 
 return M

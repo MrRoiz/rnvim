@@ -199,7 +199,7 @@ local Mappings = {
 			},
 			["Close diffview"] = {
 				command = "<Leader>dcc",
-				mapping = ":DiffviewClose<CR>",
+				mapping = "<cmd>set hidden<CR><cmd>DiffviewClose<CR><cmd>set nohidden<CR>",
 			},
 			["Show Commit history with changes"] = {
 				command = "<Leader>dh",

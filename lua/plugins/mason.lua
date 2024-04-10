@@ -39,9 +39,14 @@ return {
 			"williamboman/mason.nvim",
 			"jose-elias-alvarez/null-ls.nvim",
 		},
-		opts = {
-			ensure_installed = require("core.utils").parse_formatters()
-		},
+		opts = function()
+			local utils = require('core.utils')
+			local ensure_installed = utils.extend_table(utils.parse_formatters(), utils.parse_linters())
+
+			return {
+				ensure_installed = ensure_installed
+			}
+		end,
 		config = function(plugin, opts)
 			require("mason-null-ls").setup(opts)
 		end

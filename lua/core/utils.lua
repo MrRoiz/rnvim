@@ -85,6 +85,27 @@ M.parse_formatters = function()
 	return formatters
 end
 
+M.parse_linters = function()
+	local languages = require("core.languages")
+	local linters = {}
+
+	for key, language in pairs(languages) do
+		if type(language) ~= "table" then
+			goto continue
+		end
+
+		if not M.table_contains(language, "linter") then
+			goto continue
+		end
+
+		table.insert(linters, language.linter)
+
+		::continue::
+	end
+
+	return linters
+end
+
 M.table_contains = function(given_table, given_key)
 	for key, value in pairs(given_table) do
 		if given_key == key then
@@ -121,6 +142,20 @@ M.initialize_config = function()
 	local ui_configs = require("config.ui")
 
 	vim.cmd("colorscheme " .. ui_configs.theme)
+end
+
+M.extend_table = function(table1, table2)
+	local result = {}
+
+	for key, value in ipairs(table1) do
+		table.insert(result, value)
+	end
+
+	for key, value in ipairs(table2) do
+		table.insert(result, value)
+	end
+
+	return result
 end
 
 return M

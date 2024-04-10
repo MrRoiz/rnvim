@@ -17,7 +17,7 @@ return {
 	javascript = {
 		lsp = "tsserver",
 		treesitter = { "tsx", "javascript", "typescript", "jsdoc" },
-		formatter = "prettier",
+		formatter = "prettierd",
 	},
 	json = {
 		lsp = "jsonls",

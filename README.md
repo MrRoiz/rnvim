@@ -30,7 +30,7 @@ Using Lazy as package manager \
 ## Configuration 🔧
 
 ###### Adding a language (formatter, lsp, treesitter)
-In `lua/core/languages/init.lua` you can add any language you need, and that's it rnvim will automatically install everything for you the next time you open your editor.
+You can see all the doc [here](lua/core/languages/README.md)
 
 ###### Custom config directory
 In `lua/config/` you'll have free access to some basic config for your editor (WIP improvements are comming)

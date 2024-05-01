@@ -1,9 +1,11 @@
+local language_utils = require("core.utils.language")
+
 return {
 	"nvimtools/none-ls.nvim",
 	opts = function()
 		local null_ls = require("null-ls")
-		local formatters = require("core.utils").parse_formatters()
-		local linters = require("core.utils").parse_linters()
+		local formatters = language_utils.parse_formatters()
+		local linters = language_utils.parse_linters()
 
 		local sources = {}
 

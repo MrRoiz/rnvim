@@ -2,7 +2,7 @@ return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
 	opts = {
-		ensure_installed = require("core.utils").parse_languages_to_treesitter(),
+		ensure_installed = require("core.utils.language").parse_treesitter(),
 		highlight = {
 			enable = true,
 		},

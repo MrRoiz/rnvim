@@ -1,3 +1,6 @@
+local language_utils = require("core.utils.language")
+local common_utils = require("core.utils.common")
+
 return {
 	{
 		"williamboman/mason.nvim",
@@ -18,13 +21,11 @@ return {
 			"williamboman/mason.nvim",
 		},
 		opts = function()
-			local LSP_SERVERS = require("core/languages/lsp")()
+			local LSP_SERVERS = language_utils.parse_lsp()
 			local parsed_lsp_servers = {}
 
-			for _, lsp_definition in pairs(LSP_SERVERS) do
-				if lsp_definition["server"] then
-					table.insert(parsed_lsp_servers, lsp_definition["server"])
-				end
+			for _, lsp_definition in ipairs(LSP_SERVERS) do
+				table.insert(parsed_lsp_servers, lsp_definition["server"])
 			end
 
 			return {
@@ -40,15 +41,15 @@ return {
 			"jose-elias-alvarez/null-ls.nvim",
 		},
 		opts = function()
-			local utils = require('core.utils')
-			local ensure_installed = utils.extend_table(utils.parse_formatters(), utils.parse_linters())
+			local ensure_installed =
+					common_utils.extend_table(language_utils.parse_formatters(), language_utils.parse_linters())
 
 			return {
-				ensure_installed = ensure_installed
+				ensure_installed = ensure_installed,
 			}
 		end,
 		config = function(plugin, opts)
 			require("mason-null-ls").setup(opts)
-		end
-	}
+		end,
+	},
 }

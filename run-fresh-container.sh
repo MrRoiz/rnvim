@@ -1,2 +1,2 @@
 docker build -t rnvim-image . 
-docker run -it --rm rnvim-image sh
+docker run -it --rm rnvim-image bash

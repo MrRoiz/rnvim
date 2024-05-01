@@ -41,7 +41,7 @@ If you have some issues using [Volar](https://github.com/vuejs/language-tools) y
 ## Try it out on a Docker container 🐋
 ```console
 docker run -w /root -it --rm alpine:edge sh -uelic '
-apk add git npm neovim ripgrep alpine-sdk --update
+apk add bash curl python3 npm neovim ripgrep alpine-sdk sed g++ --update
 git clone https://github.com/mrroiz/rnvim ~/.config/nvim
 nvim'
 ```

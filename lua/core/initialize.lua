@@ -1,5 +1,7 @@
-local utils = require("core.utils")
+local editor_utils = require("core.utils.editor")
+
 vim.g.mapleader = ' '
 require("core/lazy")
-utils.initialize_config()
-utils.load_mappings()
+
+editor_utils.initialize_config()
+editor_utils.load_mappings()

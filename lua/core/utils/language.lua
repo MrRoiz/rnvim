@@ -1,79 +1,123 @@
 local common_utils = require("core.utils.common")
 
 local function get_languages_tools(tool)
-  local languages = require("core.languages")
-  local tools = {}
+	local languages = require("core.languages")
+	local tools = {}
 
-  for _, language in ipairs(languages) do
-    if not common_utils.table_contains(language, tool) then
-      goto continue
-    end
+	for _, language in ipairs(languages) do
+		if not common_utils.table_contains(language, tool) then
+			goto continue
+		end
 
-    local found_tool = language[tool]
+		local found_tool = language[tool]
 
-    if type(found_tool) == "table" and common_utils.is_array(found_tool) then
-      tools = common_utils.extend_table(tools, found_tool)
-      goto continue
-    end
+		if type(found_tool) == "table" and common_utils.is_array(found_tool) then
+			tools = common_utils.extend_table(tools, found_tool)
+			goto continue
+		end
 
-    table.insert(tools, language[tool])
+		table.insert(tools, language[tool])
 
-    ::continue::
-  end
+		::continue::
+	end
 
-  return tools
+	return tools
+end
+
+local function iterate_over_lsp_declarations(callback)
+	local languages = require("core.languages")
+
+	for _, language in ipairs(languages) do
+		if not common_utils.table_contains(language, "lsp") then
+			goto continue
+		end
+
+		local lsp_declarations = {}
+		if common_utils.is_array(language.lsp) then
+			lsp_declarations = common_utils.extend_table(lsp_declarations, language.lsp)
+		else
+			table.insert(lsp_declarations, language.lsp)
+		end
+
+		for _, lsp_declaration in ipairs(lsp_declarations) do
+			callback(lsp_declaration)
+		end
+
+		::continue::
+	end
 end
 
 local M = {}
 
-M.parse_lsp = function()
-  local languages = require("core.languages")
-  local lsps = {}
+M.parse_configurable_lsp_servers = function()
+	local lsps = {}
 
-  for _, language in ipairs(languages) do
+	iterate_over_lsp_declarations(function(lsp_declaration)
+		local current_config = {}
+		if not common_utils.table_contains(lsp_declaration, "server") then
+			goto continue
+		end
 
-    if not common_utils.table_contains(language, "lsp") then
-      goto continue
-    end
+		if common_utils.table_contains(lsp_declaration, "plugin") then
+			goto continue
+		end
 
-    local lsp_declarations = {}
-    if common_utils.is_array(language.lsp) then
-      lsp_declarations = common_utils.extend_table(lsp_declarations, language.lsp)
-    else
-      table.insert(lsp_declarations, language.lsp)
-    end
+		current_config.server = lsp_declaration.server
 
-    for _, lsp_declaration in ipairs(lsp_declarations) do
-      local current_config = {}
-      if not common_utils.table_contains(lsp_declaration, "server") then
-        goto continue
-      end
+		if common_utils.table_contains(lsp_declaration, "server_opts") then
+			current_config.server_opts = lsp_declaration.server_opts
+		end
 
-      current_config.server = lsp_declaration.server
+		table.insert(lsps, current_config)
 
-      if common_utils.table_contains(lsp_declaration, "server_opts") then
-        current_config.config = lsp_declaration.server_opts
-      end
+		::continue::
+	end)
 
-      table.insert(lsps, current_config)
-    end
+	return lsps
+end
 
-    ::continue::
-  end
+M.parse_installable_lsp_servers = function()
+	local lsps = {}
 
-  return lsps
+	iterate_over_lsp_declarations(function(lsp_declaration)
+		if not common_utils.table_contains(lsp_declaration, "server") then
+			goto continue
+		end
+
+		table.insert(lsps, lsp_declaration.server)
+
+		::continue::
+	end)
+
+	return lsps
+end
+
+M.parse_lsp_plugins = function()
+	local plugins = {}
+
+	iterate_over_lsp_declarations(function(lsp_declaration)
+		if not common_utils.table_contains(lsp_declaration, "plugin") then
+			goto continue
+		end
+
+		table.insert(plugins, lsp_declaration.plugin)
+
+		::continue::
+	end)
+
+	return plugins
 end
 
 M.parse_treesitter = function()
-  return get_languages_tools("treesitter")
+	return get_languages_tools("treesitter")
 end
 
 M.parse_formatters = function()
-  return get_languages_tools("formatter")
+	return get_languages_tools("formatter")
 end
 
 M.parse_linters = function()
-  return get_languages_tools("linter")
+	return get_languages_tools("linter")
 end
 
 return M

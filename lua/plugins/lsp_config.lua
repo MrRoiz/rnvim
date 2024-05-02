@@ -36,7 +36,7 @@ return {
 	config = function(plugin, opts)
 		local lspconfig = require("lspconfig")
 		local common_utils = require("core.utils.common")
-		local LSP_SERVERS = require("core.utils.language").parse_lsp()
+		local LSP_SERVERS = require("core.utils.language").parse_configurable_lsp_servers()
 		require("core.utils.editor").set_diagnostic_config()
 
 		for _, lsp_definition in pairs(LSP_SERVERS) do
@@ -46,7 +46,7 @@ return {
 			}
 
 			if common_utils.table_contains(lsp_definition, 'server_opts') then
-				setup = common_utils.extend_table(setup, lsp_definition.server_opts)
+				setup = common_utils.merge_tables(setup, lsp_definition.server_opts)
 			end
 
 			lspconfig[lsp_definition["server"]].setup(setup)

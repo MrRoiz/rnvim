@@ -73,7 +73,7 @@ local Mappings = {
 				command = "<C-k>",
 				mapping = "10k",
 			},
-		}
+		},
 	},
 	general = {
 		i = {
@@ -207,8 +207,8 @@ local Mappings = {
 			},
 			["Show current file history"] = {
 				command = "<Leader>dch",
-				mapping = ":DiffviewFileHistory %<CR>"
-			}
+				mapping = ":DiffviewFileHistory %<CR>",
+			},
 		},
 	},
 	ufo = {
@@ -231,7 +231,9 @@ local Mappings = {
 		n = {
 			["Format file"] = {
 				command = { "<M-F>", "ﬁ" },
-				mapping = ":lua vim.lsp.buf.format({ timeout_ms = 5000 })<CR>",
+				mapping = function()
+					vim.lsp.buf.format({ async = true })
+				end,
 			},
 		},
 	},
@@ -239,24 +241,24 @@ local Mappings = {
 		n = {
 			["Open Spectre"] = {
 				command = "<Leader>ss",
-				mapping = ":lua require('spectre').open()<CR>"
+				mapping = ":lua require('spectre').open()<CR>",
 			},
 			["Search current word with Spectre"] = {
 				command = "<Leader>sw",
-				mapping = ":lua require('spectre').open_visual({select_word=true})<CR>"
+				mapping = ":lua require('spectre').open_visual({select_word=true})<CR>",
 			},
 			["Search on current file with Spectre"] = {
 				command = "<Leader>sf",
-				mapping = ":lua require('spectre').open_file_search({select_word=true})<CR>"
-			}
+				mapping = ":lua require('spectre').open_file_search({select_word=true})<CR>",
+			},
 		},
 		v = {
 			["Search on current file with Spectre"] = {
 				command = "<Leader>sw",
-				mapping = "<esc><cmd>lua require('spectre').open_visual()<CR>"
-			}
-		}
-	}
+				mapping = "<esc><cmd>lua require('spectre').open_visual()<CR>",
+			},
+		},
+	},
 }
 
 return Mappings

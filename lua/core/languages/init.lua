@@ -12,4 +12,6 @@ return {
 	require('core.languages.svelte'),
 	require('core.languages.vim'),
 	require('core.languages.vue'),
+	require('core.languages.toml'),
+	require('core.languages.yaml'),
 }

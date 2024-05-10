@@ -1,5 +1,8 @@
 return {
 	"neovim/nvim-lspconfig",
+	dependencies = {
+		{ "folke/neodev.nvim", opts = {} }
+	},
 	opts = {
 		on_attach = function(client, bufnr)
 			-- Enable completion triggered by <c-x><c-o>
@@ -38,6 +41,7 @@ return {
 		local common_utils = require("core.utils.common")
 		local LSP_SERVERS = require("core.utils.language").parse_configurable_lsp_servers()
 		require("core.utils.editor").set_diagnostic_config()
+		require("neodev").setup()
 
 		for _, lsp_definition in pairs(LSP_SERVERS) do
 			local setup = {

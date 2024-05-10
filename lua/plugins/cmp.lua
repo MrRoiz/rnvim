@@ -8,6 +8,7 @@ return {
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-cmdline",
 		"saadparwaiz1/cmp_luasnip",
+		"roobert/tailwindcss-colorizer-cmp.nvim",
 		{
 			"L3MON4D3/LuaSnip",
 			dependencies = {
@@ -67,6 +68,9 @@ return {
 			}),
 			completion = {
 				completeopt = "menu,menuone,noinsert",
+			},
+			formatting = {
+				format = require("tailwindcss-colorizer-cmp").formatter,
 			},
 		}
 	end,

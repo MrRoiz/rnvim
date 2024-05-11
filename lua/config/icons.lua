@@ -6,4 +6,15 @@ return {
 		Info = " ",
 		Prefix = "●",
 	},
+	git = {
+		added = "✚",
+		modified = "",
+		deleted = "✖",
+		renamed = "󰁕",
+		conflict = "",
+		staged = "",
+		untracked = "",
+		ignored = "",
+		unstaged = "󰄱",
+	},
 }

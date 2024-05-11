@@ -1,4 +1,14 @@
 return {
 	"petertriho/nvim-scrollbar",
-    config = true
+	opts = {
+		excluded_filetypes = {
+			"cmp_docs",
+			"cmp_menu",
+			"noice",
+			"prompt",
+			"TelescopePrompt",
+			"neo-tree",
+			"DiffviewFiles",
+		},
+	},
 }

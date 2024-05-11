@@ -101,11 +101,11 @@ local Mappings = {
 			},
 		},
 	},
-	nvimtree = {
+	neo_tree = {
 		n = {
-			["Open Nvimtree"] = {
+			["Open neo_tree"] = {
 				command = "<C-b>",
-				mapping = ":NvimTreeFindFileToggle<CR>",
+				mapping = ":Neotree toggle<CR>",
 			},
 		},
 	},

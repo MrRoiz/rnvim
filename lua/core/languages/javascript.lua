@@ -31,9 +31,9 @@ return {
   },
   treesitter = { 'tsx', 'javascript', 'typescript', 'jsdoc', 'prisma' },
   formatter = {
-    typescript = { 'prettierd' },
-    typescriptreact = { 'prettierd' },
-    javascript = { 'prettierd' },
-    javascriptreact = { 'prettierd' },
+    typescript = { 'prettier' },
+    typescriptreact = { 'prettier' },
+    javascript = { 'prettier' },
+    javascriptreact = { 'prettier' },
   },
 }

@@ -11,7 +11,7 @@ local function get_languages_tools(tool)
 
 		local found_tool = language[tool]
 
-		if type(found_tool) == "table" and common_utils.is_array(found_tool) then
+		if type(found_tool) == "table" and vim.tbl_islist(found_tool) then
 			tools = common_utils.extend_table(tools, found_tool)
 			goto continue
 		end
@@ -33,7 +33,7 @@ local function iterate_over_lsp_declarations(callback)
 		end
 
 		local lsp_declarations = {}
-		if common_utils.is_array(language.lsp) then
+		if vim.tbl_islist(language.lsp) then
 			lsp_declarations = common_utils.extend_table(lsp_declarations, language.lsp)
 		else
 			table.insert(lsp_declarations, language.lsp)

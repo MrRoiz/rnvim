@@ -38,8 +38,4 @@ M.merge_tables = function (table1, table2)
 	
 end
 
-M.is_array = function (table)
-	return #table > 0 and next(table, #table) == nil
-end
-
 return M

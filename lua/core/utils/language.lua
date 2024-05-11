@@ -115,13 +115,8 @@ M.parse_treesitter = function()
 	return get_languages_tools("treesitter")
 end
 
-M.parse_formatters_conform = function()
-	return get_languages_tools("formatter")
-end
-
 M.parse_formatters = function()
-	local raw_formatters = M.parse_formatters_conform()
-	return vim.tbl_flatten(vim.tbl_values(raw_formatters))
+	return get_languages_tools("formatter")
 end
 
 M.parse_linters = function()

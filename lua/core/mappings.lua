@@ -227,13 +227,17 @@ local Mappings = {
 			},
 		},
 	},
-	null_ls = {
+	conform = {
 		n = {
 			["Format file"] = {
 				command = { "<M-F>", "ﬁ" },
-				mapping = function()
-					vim.lsp.buf.format({ async = true })
-				end,
+				mapping = ":Format<CR>",
+			},
+		},
+		v = {
+			["Format selectoin"] = {
+				command = { "<M-F>", "ﬁ" },
+				mapping = ":Format<CR>",
 			},
 		},
 	},

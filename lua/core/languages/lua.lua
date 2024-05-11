@@ -5,12 +5,12 @@ return {
       settings = {
         Lua = {
           diagnostics = {
-            globals = { "vim" }
-          }
-        }
-      }
-    }
+            globals = { "vim" },
+          },
+        },
+      },
+    },
   },
   treesitter = "lua",
-  formatter = "stylua"
+  formatter = { lua = "stylua" },
 }

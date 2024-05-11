@@ -19,8 +19,8 @@ different type of objects
 - `treesitter`: This field can be directly an string or an array of strings of the treesitter parser that will be
 automatically installed
 
-- `formatter`: This field can be directly an string or an array of strings of the formatters that will be
-automatically installed
+- `formatter`: This is a table just like it would be in `formatters_by_ft` in [Conform.nvim](https://github.com/stevearc/conform.nvim)
 
+#### Linter selector is still WIP
 - `linter`: This field can be directly an string or an array of strings of the linters that will be
 automatically installed

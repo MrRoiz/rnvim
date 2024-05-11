@@ -2,10 +2,14 @@ local language_utils = require("core.utils.language")
 
 return {
   "stevearc/conform.nvim",
+  dependencies = {
+    "williamboman/mason.nvim",
+    "zapling/mason-conform.nvim"
+  },
   opts = {
     formatters_by_ft = language_utils.parse_formatters_conform(),
   },
-  init = function()
+  config = function (_, opts)
     vim.api.nvim_create_user_command("Format", function(args)
       local range = nil
       if args.count ~= -1 then
@@ -17,5 +21,8 @@ return {
       end
       require("conform").format({ async = true, lsp_fallback = true, range = range })
     end, { range = true })
+
+    require('conform').setup(opts)
+    require("mason-conform").setup()
   end,
 }

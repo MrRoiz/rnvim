@@ -1,3 +1,3 @@
 return {
-  treesitter = {'vim', 'vimdoc'}
+  treesitter = { 'vim', 'vimdoc' },
 }

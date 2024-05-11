@@ -1,3 +1,3 @@
 return {
-  treesitter = "json"
+  treesitter = 'json',
 }

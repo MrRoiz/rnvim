@@ -3,27 +3,27 @@
 local indendtSize = 2
 
 return {
-    clipboard = "unnamedplus",
+  clipboard = 'unnamedplus',
 
-    -- relativenumber = true
-    nu = true,
-    cursorline = true,
-    termguicolors = true,
+  -- relativenumber = true
+  nu = true,
+  cursorline = true,
+  termguicolors = true,
 
-    -- Text
-    expandtab = true,
-    softtabstop = indendtSize,
-    shiftwidth = indendtSize,
-    tabstop = indendtSize,
-    smartindent = true,
-    wrap = false,
+  -- Text
+  expandtab = true,
+  softtabstop = indendtSize,
+  shiftwidth = indendtSize,
+  tabstop = indendtSize,
+  smartindent = true,
+  wrap = false,
 
-    -- Highlighting
-    spell = true,
+  -- Highlighting
+  spell = true,
 
-    -- Search Options
-    hlsearch = true,
-    ignorecase = true,
-    smartcase = true,
-    incsearch = true,
+  -- Search Options
+  hlsearch = true,
+  ignorecase = true,
+  smartcase = true,
+  incsearch = true,
 }

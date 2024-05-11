@@ -1,5 +1,5 @@
 return {
-    vue = {
-        tsdk = ""
-    }
+  vue = {
+    tsdk = '',
+  },
 }

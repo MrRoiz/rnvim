@@ -1,6 +1,6 @@
 return {
-    "rmagatti/goto-preview",
-    opts = {
-        default_mappings = true
-    }
+  'rmagatti/goto-preview',
+  opts = {
+    default_mappings = true,
+  },
 }

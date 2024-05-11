@@ -1,6 +1,6 @@
 return {
   lsp = {
-    server = "svelte",
+    server = 'svelte',
   },
-  treesitter = "svelte",
+  treesitter = 'svelte',
 }

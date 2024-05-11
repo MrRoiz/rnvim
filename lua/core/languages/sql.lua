@@ -1,4 +1,4 @@
 return {
-  treesitter = "sql",
-  formatter = { sql = { "sql_formatter" } },
+  treesitter = 'sql',
+  formatter = { sql = { 'sql_formatter' } },
 }

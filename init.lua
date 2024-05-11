@@ -1,1 +1,1 @@
-require('core/initialize')
+require('core.initialize')

@@ -1,3 +1,3 @@
 return {
-  treesitter = { "css", "scss" },
+  treesitter = { 'css', 'scss' },
 }

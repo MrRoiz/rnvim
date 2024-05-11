@@ -1,4 +1,4 @@
 return {
-    "nvim-pack/nvim-spectre",
-    config = true
+  'nvim-pack/nvim-spectre',
+  config = true,
 }

@@ -1,3 +1,3 @@
 return {
-  treesitter = { "markdown", "markdown_inline" },
+  treesitter = { 'markdown', 'markdown_inline' },
 }

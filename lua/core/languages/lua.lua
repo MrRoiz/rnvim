@@ -1,16 +1,16 @@
 return {
   lsp = {
-    server = "lua_ls",
+    server = 'lua_ls',
     server_opts = {
       settings = {
         Lua = {
           diagnostics = {
-            globals = { "vim" },
+            globals = { 'vim' },
           },
         },
       },
     },
   },
-  treesitter = "lua",
-  formatter = { lua = { "stylua" } },
+  treesitter = 'lua',
+  formatter = { lua = { 'stylua' } },
 }

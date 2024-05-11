@@ -1,4 +1,4 @@
 return {
-    "folke/which-key.nvim",
-    config = true
+  'folke/which-key.nvim',
+  config = true,
 }

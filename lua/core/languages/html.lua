@@ -1,6 +1,6 @@
 return {
   lsp = {
-    server = "html",
+    server = 'html',
   },
-  treesitter = "html",
+  treesitter = 'html',
 }

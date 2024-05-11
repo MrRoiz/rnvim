@@ -1,17 +1,17 @@
 return {
   lsp = {
-    server = "pyright",
+    server = 'pyright',
     server_opts = {
       settings = {
         python = {
           analysis = {
             -- Disabled because of type errors with Django
-            typeCheckingMode = "off",
+            typeCheckingMode = 'off',
           },
         },
       },
     },
   },
-  treesitter = "python",
-  formatter = { python = { "black" } },
+  treesitter = 'python',
+  formatter = { python = { 'black' } },
 }

@@ -1,6 +1,6 @@
 return {
   lsp = {
-    server = "bashls"
+    server = 'bashls',
   },
-  treesitter = "bash"
+  treesitter = 'bash',
 }

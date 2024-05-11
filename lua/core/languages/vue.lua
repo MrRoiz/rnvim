@@ -1,8 +1,8 @@
-local tsdk = require("config.languages").vue.tsdk
+local tsdk = require('config.languages').vue.tsdk
 
 return {
   lsp = {
-    server = "volar",
+    server = 'volar',
     server_opts = {
       init_options = {
         typescript = {
@@ -11,5 +11,5 @@ return {
       },
     },
   },
-  treesitter = "vue",
+  treesitter = 'vue',
 }

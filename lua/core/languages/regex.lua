@@ -1,3 +1,3 @@
 return {
-  treesitter = "regex",
+  treesitter = 'regex',
 }

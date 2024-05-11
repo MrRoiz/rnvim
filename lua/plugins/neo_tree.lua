@@ -7,7 +7,6 @@ return {
     'nvim-lua/plenary.nvim',
     'nvim-tree/nvim-web-devicons',
     'MunifTanjim/nui.nvim',
-    '3rd/image.nvim',
   },
   opts = {
     event_handlers = {
@@ -37,6 +36,12 @@ return {
     filesystem = {
       filtered_items = {
         visible = true,
+        hide_dotfiles = false,
+        hide_gitignored = true,
+        hide_hidden = false,
+      },
+      follow_current_file = {
+        enabled = true,
       },
     },
   },

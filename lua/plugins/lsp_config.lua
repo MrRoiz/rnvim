@@ -50,7 +50,7 @@ return {
 			}
 
 			if common_utils.table_contains(lsp_definition, 'server_opts') then
-				setup = common_utils.merge_tables(setup, lsp_definition.server_opts)
+				setup = vim.tbl_extend("error", setup, lsp_definition.server_opts)
 			end
 
 			lspconfig[lsp_definition["server"]].setup(setup)

@@ -14,6 +14,9 @@ local function get_languages_tools(tool)
 		if type(found_tool) == "table" and vim.tbl_islist(found_tool) then
 			tools = common_utils.extend_table(tools, found_tool)
 			goto continue
+		elseif type(found_tool) == "table" and not vim.tbl_islist(found_tool)  then
+			tools = vim.tbl_extend("error", tools, found_tool)
+			goto continue
 		end
 
 		table.insert(tools, language[tool])

@@ -12,5 +12,5 @@ return {
     },
   },
   treesitter = "lua",
-  formatter = { lua = "stylua" },
+  formatter = { lua = { "stylua" } },
 }

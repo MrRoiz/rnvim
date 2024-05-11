@@ -23,19 +23,8 @@ M.extend_table = function(table1, table2)
 	return result
 end
 
-M.merge_tables = function (table1, table2)
-	local result = {}
-
-	for key, value in pairs(table1) do
-		result[key] = value
-	end
-
-	for key, value in pairs(table2) do
-		result[key] = value
-	end
-
-	return result
-	
+M.dump_to_file = function (file_name, value)
+	vim.fn.system("echo ".. vim.fn.json_encode(value) .. " >> " .. file_name)
 end
 
 return M

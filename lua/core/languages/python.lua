@@ -13,5 +13,5 @@ return {
     },
   },
   treesitter = "python",
-  formatter = {python="black"},
+  formatter = { python = { "black" } },
 }

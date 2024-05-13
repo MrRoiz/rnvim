@@ -3,4 +3,7 @@ return {
     server = 'html',
   },
   treesitter = 'html',
+  formatter = {
+    html = { 'prettier' },
+  },
 }

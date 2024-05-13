@@ -12,4 +12,7 @@ return {
     },
   },
   treesitter = 'vue',
+  formatter = {
+    vue = { 'prettier' },
+  },
 }

@@ -8,7 +8,10 @@ return {
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-cmdline',
     'saadparwaiz1/cmp_luasnip',
+
+    -- Formatters
     'roobert/tailwindcss-colorizer-cmp.nvim',
+    'onsails/lspkind.nvim',
     {
       'L3MON4D3/LuaSnip',
       dependencies = {
@@ -21,6 +24,9 @@ return {
   },
   opts = function()
     local cmp = require('cmp')
+    require('tailwindcss-colorizer-cmp').setup({
+      color_square_width = 2,
+    })
 
     return {
       snippet = {
@@ -67,7 +73,11 @@ return {
         completeopt = 'menu,menuone,noinsert',
       },
       formatting = {
-        format = require('tailwindcss-colorizer-cmp').formatter,
+        format = function(entry, vim_item)
+          local new_item = require('tailwindcss-colorizer-cmp').formatter(entry, vim_item)
+          new_item = require('lspkind').cmp_format()(entry, new_item)
+          return new_item
+        end,
       },
     }
   end,

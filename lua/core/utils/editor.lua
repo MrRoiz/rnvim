@@ -1,24 +1,41 @@
 local M = {}
 
-M.load_mappings = function(plugin_name)
+--- When this function receive a plugin name it will only set the mappings for that specific plugin defined in `core.mappings`
+--- @param plugin_name nil | string
+--- @param additional_opts nil | table
+M.load_mappings = function(plugin_name, additional_opts)
   local mappings = require('core.mappings')
+  local common_utils = require('core.utils.common')
+  additional_opts = additional_opts and additional_opts or {} -- Ternary operator to handle a default empty table
+
+  --- @param mode string This is the mode where the mapping will be applied
+  --- @param command string This is the actual nvim command this mapping will execute
+  --- @param mapping string | function This is the keymap assigned to the command
+  --- @param desc string This is a brief description of the mapping that will be registered as well
   local set_keymap = function(mode, command, mapping, desc)
-    vim.keymap.set(mode, command, mapping, { silent = true, desc = desc })
+    local opts = vim.tbl_extend('error', additional_opts, { silent = true, desc = desc })
+    vim.keymap.set(mode, command, mapping, opts)
   end
 
   local set_mapping = function(mode_group)
     for mode, commands in pairs(mode_group) do
-      if mode ~= 'plugin' then
-        for alias, command_definition in pairs(commands) do
-          if type(command_definition.command) == 'table' then
-            for _, command in pairs(command_definition.command) do
-              set_keymap(mode, command, command_definition.mapping, alias)
-            end
-          else
-            set_keymap(mode, command_definition.command, command_definition.mapping, alias)
-          end
-        end
+      if mode == 'plugin' then
+        goto continue
       end
+
+      for alias, command_definition in pairs(commands) do
+
+        if vim.islist(command_definition.command) then
+          for _, command in ipairs(command_definition.command) do
+            set_keymap(mode, command, command_definition.mapping, alias)
+          end
+        else
+          set_keymap(mode, command_definition.command, command_definition.mapping, alias)
+        end
+
+      end
+
+      ::continue::
     end
   end
 

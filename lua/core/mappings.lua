@@ -1,21 +1,18 @@
 --[[
-    Schema:
-
-        Mappings {
-            leader_key: "set leader key"
-
-            [name of mapping group]: {
-
-                [short mode name]: {
-                    [alias of the mapping (just to indentify them easier)]: {
-                        command: "Command you want to use for this mapping can also be a Table to set multiple mappings to one command (useful when using PC and Mac)"
-                        mapping: "Command to be executed when you press the command you set above"
-                    }
-                }
-            }
+  Schema:
+    Mappings {
+      leader_key: "set leader key"
+      [name of mapping group]: {
+        pluging = This is an optional field that means that it will be skypped until you tell the load_mapping function to load that plugin mappings
+        [short mode name]: {
+          [alias of the mapping (just to identify them easier)]: {
+            command: "Command you want to use for this mapping can also be a Table to set multiple mappings to one command (useful when using PC and Mac)"
+              mapping: "Command to be executed when you press the command you set above"
+          }
         }
+      }
+    }
 ]]
-
 local Mappings = {
   -- leader_key= " ",
 
@@ -98,6 +95,43 @@ local Mappings = {
       ['Clear search highlight'] = {
         command = '_',
         mapping = ':noh<CR>',
+      },
+    },
+  },
+  lsp_config = {
+    plugin = true,
+    n = {
+      ['Go to declaration'] = {
+        command = 'gD',
+        mapping = vim.lsp.buf.declaration,
+      },
+      ['Go to definition'] = {
+        command = 'gd',
+        mapping = ':Telescope lsp_definitions initial_mode=normal<CR>',
+      },
+      ['Hover'] = {
+        command = 'K',
+        mapping = vim.lsp.buf.hover,
+      },
+      ['Type definition'] = {
+        command = '<Leader>D',
+        mapping = vim.lsp.buf.type_definition,
+      },
+      ['Rename'] = {
+        command = '<Leader>rn',
+        mapping = vim.lsp.buf.rename,
+      },
+      ['Show references'] = {
+        command = 'gr',
+        mapping = ':Telescope lsp_references initial_mode=normal<CR>',
+      },
+      ['Show code actions'] = {
+        command = '<Leader>ca',
+        mapping = vim.lsp.buf.code_action,
+      },
+      ['Show diagnostics'] = {
+        command = '<Leader>ce',
+        mapping = vim.diagnostic.open_float,
       },
     },
   },

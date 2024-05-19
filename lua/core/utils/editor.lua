@@ -5,7 +5,7 @@ local M = {}
 --- @param additional_opts nil | table
 M.load_mappings = function(plugin_name, additional_opts)
   local mappings = require('core.mappings')
-  local common_utils = require('core.utils.common')
+
   additional_opts = additional_opts and additional_opts or {} -- Ternary operator to handle a default empty table
 
   --- @param mode string This is the mode where the mapping will be applied

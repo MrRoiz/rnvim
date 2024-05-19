@@ -297,6 +297,60 @@ local Mappings = {
       },
     },
   },
+  yanky = {
+    n = {
+      ['Yank'] = {
+        command = 'y',
+        mapping = '<Plug>(YankyYank)',
+      },
+      ['Only put'] = {
+        command = ',p',
+        mapping = '"0<Plug>(YankyPutAfter)',
+      },
+      ['Put after'] = {
+        command = 'p',
+        mapping = '<Plug>(YankyPutAfter)',
+      },
+      ['Put before'] = {
+        command = 'P',
+        mapping = '<Plug>(YankyPutBefore)',
+      },
+      ['GPut after'] = {
+        command = 'gp',
+        mapping = '<Plug>(YankyGPutAfter)',
+      },
+      ['GPut before'] = {
+        command = 'gP',
+        mapping = '<Plug>(YankyGPutBefore)',
+      },
+    },
+    x = {
+      ['Yank'] = {
+        command = 'y',
+        mapping = '<Plug>(YankyYank)',
+      },
+      ['Only put'] = {
+        command = ',p',
+        mapping = '"0<Plug>(YankyPutAfter)',
+      },
+      ['Put after'] = {
+        command = 'p',
+        mapping = '<Plug>(YankyPutAfter)',
+      },
+      ['Put before'] = {
+        command = 'P',
+        mapping = '<Plug>(YankyPutBefore)',
+      },
+      ['GPut after'] = {
+        command = 'gp',
+        mapping = '<Plug>(YankyGPutAfter)',
+      },
+      ['GPut before'] = {
+        command = 'gP',
+        mapping = '<Plug>(YankyGPutBefore)',
+      },
+    },
+  },
 }
 
 return Mappings

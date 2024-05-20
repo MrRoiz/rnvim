@@ -21,6 +21,7 @@ return {
         'notify',
         'toggleterm',
         'lazyterm',
+        'neo-tree'
       },
       callback = function()
         vim.b.miniindentscope_disable = true

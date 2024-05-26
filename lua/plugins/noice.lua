@@ -10,6 +10,16 @@ return {
   },
   opts = {
     lsp = {
+      hover = {
+        -- When working with multiple lsp it shows bad
+        silent = true,
+      },
+      signature = {
+        -- Cool feature but disabled since when working with slow lsp's it gets kinda annoying
+        auto_open = {
+          enabled = false
+        }
+      },
       override = {
         ['vim.lsp.util.convert_input_to_markdown_lines'] = true,
         ['vim.lsp.util.stylize_markdown'] = true,

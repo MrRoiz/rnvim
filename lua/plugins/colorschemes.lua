@@ -1,8 +1,7 @@
 return {
   {
-    'MrRoiz/neovim-ayu',
+    'Shatur/neovim-ayu',
     lazy = false,
-    branch = 'main',
     priority = 1000,
   },
   {

@@ -5,7 +5,11 @@ return {
       plugin = {
         'pmizio/typescript-tools.nvim',
         dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
-        opts = {},
+        opts = {
+          on_attach = function(client, bufnr)
+            require('core.utils.editor').load_mappings('lsp_config', { noremap = true, buffer = bufnr })
+          end,
+        },
       },
     },
     {

@@ -6,7 +6,7 @@ return {
   require('plugins.languages.bash'),
 
   -- UI
-  require('plugins.ui.colorschema'),
+  require('plugins.ui.colorscheme'),
   require('plugins.ui.dashboard'),
   require('plugins.ui.noice'),
   require('plugins.ui.bufferline'),

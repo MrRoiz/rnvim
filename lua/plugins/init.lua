@@ -13,4 +13,7 @@ return {
   -- Coding
   require('plugins.coding.nvim-cmp'),
   require('plugins.coding.diffview'),
+
+  -- Editor
+  require('plugins.editor.neo-tree'),
 }

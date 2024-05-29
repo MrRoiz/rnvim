@@ -1,6 +1,7 @@
 return {
   -- Languages that requires a custom config
   require('plugins.languages.javascript'),
+  require('plugins.languages.json'),
   require('plugins.languages.markdown'),
   require('plugins.languages.bash'),
 

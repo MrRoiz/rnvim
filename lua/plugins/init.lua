@@ -6,6 +6,7 @@ return {
   require('plugins.ui.colorschema'),
   require('plugins.ui.dashboard'),
   require('plugins.ui.noice'),
+  require('plugins.ui.bufferline'),
 
   -- Formatters
   require('plugins.formatting.conform'),

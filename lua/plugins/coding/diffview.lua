@@ -5,7 +5,7 @@ return {
   },
   keys = {
     { '<Leader>dv', ':DiffviewOpen<CR>' },
-    { '<Leader>dc', '<cmd>set hidden<CR><cmd>DiffviewClose<CR><cmd>set nohidden<CR>' },
+    { '<Leader>dcc', '<cmd>set hidden<CR><cmd>DiffviewClose<CR><cmd>set nohidden<CR>' },
     { '<Leader>dh', ':DiffviewFileHistory<CR>' },
     { '<Leader>dch', ':DiffviewFileHistory %<CR>' },
   },

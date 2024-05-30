@@ -29,6 +29,10 @@ return {
         },
         eslint = {
           settings = {
+            -- Workaround see https://github.com/neovim/nvim-lspconfig/pull/3183#issuecomment-2139825379
+            experimental = {
+              useFlatConfig = false,
+            },
             -- helps eslint find the eslintrc when it's placed in a subfolder instead of the cwd root
             workingDirectories = { mode = 'auto' },
           },

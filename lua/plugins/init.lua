@@ -20,4 +20,5 @@ return {
 
   -- Editor
   require('plugins.editor.neo-tree'),
+  require('plugins.editor.mini-move'),
 }

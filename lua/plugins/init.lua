@@ -1,6 +1,6 @@
 return {
   -- Languages that requires a custom config
-  require('plugins.languages.javascript'),
+  require('plugins.languages.typescript'),
   require('plugins.languages.json'),
   require('plugins.languages.markdown'),
   require('plugins.languages.bash'),
@@ -17,9 +17,10 @@ return {
 
   -- Coding
   require('plugins.coding.nvim-cmp'),
-  require('plugins.coding.diffview'),
+  require('plugins.coding.nvim-snippets'),
 
   -- Editor
   require('plugins.editor.neo-tree'),
   require('plugins.editor.mini-move'),
+  require('plugins.editor.diffview'),
 }

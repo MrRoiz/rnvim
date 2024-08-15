@@ -2,13 +2,11 @@
 
 ### A plug and play neovim config based in LazyVim ⚡️
 
-![image](https://user-images.githubusercontent.com/49358353/236326296-3be55b89-c101-4352-81cc-b40b4fd10d19.png)
+![2024-08-15_10-22](https://github.com/user-attachments/assets/1c9fc08d-b7fa-4c35-a1e7-1e50c6e1978b)
 
-![image](https://user-images.githubusercontent.com/49358353/236327291-83c4225f-723d-4514-a4b7-8ccf11965da6.png)
+![2024-08-15_10-21](https://github.com/user-attachments/assets/aa5bc521-409d-4b04-b15f-963cd086880c)
 
-![image](https://user-images.githubusercontent.com/49358353/236326939-e81937f8-53f7-4f2b-84d5-56d3ac9f427b.png)
-
-![image](https://user-images.githubusercontent.com/49358353/236326512-3b18e812-af0c-4ed2-a0ba-207ca798f335.png)
+![2024-08-15_10-22_1](https://github.com/user-attachments/assets/c83a804f-4165-421e-a8b2-13601b9e54e7)
 
 ## Dependencies 🧩
 

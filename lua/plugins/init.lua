@@ -5,6 +5,7 @@ return {
   require('plugins.languages.markdown'),
   require('plugins.languages.bash'),
   require('plugins.languages.sql'),
+  require('plugins.languages.java'),
 
   -- UI
   require('plugins.ui.colorscheme'),

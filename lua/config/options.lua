@@ -13,6 +13,7 @@ vim.filetype.add({
     ['.*/waybar/config'] = 'jsonc',
     ['.*/kitty/.+%.conf'] = 'bash',
     ['%.env%.[%w_.-]+'] = 'sh',
+    ['%.dbml'] = 'dbml',
   },
   filename = {
     ['.commitlintrc'] = 'json',

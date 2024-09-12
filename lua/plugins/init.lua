@@ -6,6 +6,7 @@ return {
   require('plugins.languages.bash'),
   require('plugins.languages.sql'),
   require('plugins.languages.java'),
+  require('plugins.languages.dbml'),
 
   -- UI
   require('plugins.ui.colorscheme'),

@@ -1,5 +1,8 @@
+-- NOTE: To install original nvim-cmp just update the repo to the actual nvim-cmp and remove the name prop
+
 return {
-  'hrsh7th/nvim-cmp',
+  'iguanacucumber/magazine.nvim',
+  name = 'nvim-cmp',
   opts = function(_, opts)
     local cmp = require('cmp')
 

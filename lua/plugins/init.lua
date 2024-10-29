@@ -19,7 +19,7 @@ return {
   require('plugins.formatting.conform'),
 
   -- Coding
-  require('plugins.coding.nvim-cmp'),
+  require('plugins.coding.magazine'),
   require('plugins.coding.nvim-snippets'),
 
   -- Editor

@@ -11,15 +11,12 @@ return {
 
   -- UI
   require('plugins.ui.colorscheme'),
-  require('plugins.ui.dashboard'),
+  require('plugins.ui.snacks'),
   require('plugins.ui.noice'),
   require('plugins.ui.bufferline'),
 
-  -- Formatters
-  require('plugins.formatting.conform'),
-
   -- Coding
-  require('plugins.coding.magazine'),
+  require('plugins.coding.cmp'),
   require('plugins.coding.nvim-snippets'),
 
   -- Editor

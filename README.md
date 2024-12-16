@@ -17,3 +17,4 @@
 - A [Nerd Font](https://www.nerdfonts.com/) is required on your preferred terminal emulator to handle icons
 - [Node with NPM](https://nodejs.org/es) is required to install some lsp's
 - If you're using linux a [Clipboard tool](https://neovim.io/doc/user/provider.html#provider-clipboard) is required, tested with [Xsel](https://github.com/kfish/xsel)
+- [fzf](https://github.com/junegunn/fzf) binary is required

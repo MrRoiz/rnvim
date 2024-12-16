@@ -15,5 +15,8 @@ return {
         header = logo,
       },
     },
+    scroll = {
+      enabled = false,
+    },
   },
 }

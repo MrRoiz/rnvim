@@ -16,6 +16,7 @@ return {
   require('plugins.ui.bufferline'),
 
   -- Coding
+  require('plugins.coding.cmp'),
   require('plugins.coding.blink'),
   require('plugins.coding.nvim-snippets'),
 

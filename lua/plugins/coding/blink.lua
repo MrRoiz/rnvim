@@ -1,5 +1,10 @@
 return {
   'Saghen/blink.cmp',
+  enabled = function()
+    return LazyVim.cmp_engine() == 'blink.cmp'
+  end,
+  ---@module 'blink.cmp'
+  ---@type blink.cmp.Config
   opts = {
     keymap = {
       preset = 'enter',

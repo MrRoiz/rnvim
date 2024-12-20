@@ -22,3 +22,5 @@ vim.filetype.add({
     ['.releaserc'] = 'json',
   },
 })
+
+vim.g.lazyvim_blink_main = true

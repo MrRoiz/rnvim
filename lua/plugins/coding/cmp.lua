@@ -1,10 +1,12 @@
--- NOTE: To install original nvim-cmp just update the repo to the actual nvim-cmp and remove the name prop
+-- magazine.nvim is a fork considered as a BETA that merges PR faster than the base repo
 
 return {
   -- 'iguanacucumber/magazine.nvim',
   -- name = 'nvim-cmp',
   'hrsh7th/nvim-cmp',
-  enabled = false,
+  enabled = function()
+    return LazyVim.cmp_engine() == 'nvim-cmp'
+  end,
   opts = function(_, opts)
     local cmp = require('cmp')
 

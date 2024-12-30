@@ -23,6 +23,7 @@ return {
       keymaps.toggle,
       keymaps.go_to_definition,
     },
+    -- TODO: Add file types for ts files
     opts = {
       keymaps = keymaps,
     },

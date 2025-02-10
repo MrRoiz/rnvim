@@ -4,9 +4,7 @@ return {
   -- 'iguanacucumber/magazine.nvim',
   -- name = 'nvim-cmp',
   'hrsh7th/nvim-cmp',
-  enabled = function()
-    return LazyVim.cmp_engine() == 'nvim-cmp'
-  end,
+  enabled = false,
   opts = function(_, opts)
     local cmp = require('cmp')
 

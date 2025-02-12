@@ -4,7 +4,7 @@ return {
   -- 'iguanacucumber/magazine.nvim',
   -- name = 'nvim-cmp',
   'hrsh7th/nvim-cmp',
-  enabled = false,
+  enabled = true,
   opts = function(_, opts)
     local cmp = require('cmp')
 

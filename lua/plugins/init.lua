@@ -8,6 +8,7 @@ return {
   require('plugins.languages.java'),
   require('plugins.languages.dbml'),
   require('plugins.languages.css'),
+  require('plugins.languages.just'),
 
   -- UI
   require('plugins.ui.colorscheme'),

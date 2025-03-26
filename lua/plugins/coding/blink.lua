@@ -1,6 +1,6 @@
 return {
   'Saghen/blink.cmp',
-  enabled = false,
+  enabled = true,
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {

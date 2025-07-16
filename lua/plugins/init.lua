@@ -19,7 +19,7 @@ return {
   -- Coding
   require('plugins.coding.cmp'),
   require('plugins.coding.blink'),
-  require('plugins.coding.nvim-snippets'),
+  require('plugins.coding.snippets'),
 
   -- Editor
   require('plugins.editor.neo-tree'),

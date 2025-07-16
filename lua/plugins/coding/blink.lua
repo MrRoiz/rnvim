@@ -4,13 +4,6 @@ return {
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
-    -- keymap = {
-    -- preset = 'default',
-    -- preset = 'enter',
-
-    -- ['<Tab>'] = { 'select_next', 'fallback' },
-    -- ['<S-Tab>'] = { 'select_prev', 'fallback' },
-    -- },
     appearance = {
       -- Sets the fallback highlight groups to nvim-cmp's highlight groups
       -- Useful for when your theme doesn't support blink.cmp
@@ -28,6 +21,13 @@ return {
         window = {
           border = 'single',
         },
+      },
+    },
+    sources = {
+      default = {
+        'lsp',
+        'path',
+        'buffer',
       },
     },
   },

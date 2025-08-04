@@ -4,7 +4,11 @@ return {
   { 'catppuccin/nvim', enabled = false },
 
   -- Config actual colorscheme used and lualine
-  { 'Shatur/neovim-ayu', lazy = true },
+  {
+    'MrRoiz/neovim-ayu',
+    name = 'ayu',
+    lazy = true,
+  },
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'Shatur/neovim-ayu' },

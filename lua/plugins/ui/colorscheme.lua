@@ -11,7 +11,7 @@ return {
   },
   {
     'nvim-lualine/lualine.nvim',
-    dependencies = { 'Shatur/neovim-ayu' },
+    dependencies = { 'MrRoiz/neovim-ayu' },
     opts = {
       options = { theme = 'ayu_dark' },
     },

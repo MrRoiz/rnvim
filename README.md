@@ -10,12 +10,14 @@
 
 ## Dependencies 🧩
 
-- [Neovim](https://github.com/neovim/neovim) v0.11.0 tested
-- [Ripgrep](https://github.com/BurntSushi/ripgrep) bynary is required to use [grug-far](https://github.com/MagicDuck/grug-far.nvim)
+- [Neovim](https://github.com/neovim/neovim) >= 0.11.2
+- [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md#installation) to support main branch of tree-sitter plugin
 - A C compiler is required for Tresitter (tested with [g++](https://gcc.gnu.org/)) - [Check this out if you're a Windows user](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)
+- [Ripgrep](https://github.com/BurntSushi/ripgrep) bynary is required to use [grug-far](https://github.com/MagicDuck/grug-far.nvim)
 - A [Nerd Font](https://www.nerdfonts.com/) is required on your preferred terminal emulator to handle icons
 - [Node with NPM](https://nodejs.org/es) is required to install some LSP's
 - If you're using linux a [Clipboard tool](https://neovim.io/doc/user/provider.html#provider-clipboard) is required, tested with [Xsel](https://github.com/kfish/xsel)
   - If you're using hyprland use [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 - [fzf](https://github.com/junegunn/fzf) binary is required to use [fzf-lua](https://github.com/ibhagwan/fzf-lua)
 - If you're going to use [Blink](https://github.com/Saghen/blink.cmp) on its main branch, you'll need [Rust](https://www.rust-lang.org/learn/get-started) toolchain to build the plugin
+- To support [snacks.image](https://github.com/folke/snacks.nvim/blob/main/docs/image.md) we need to install the [ImageMagick](https://imagemagick.org/) binary - if you're using Arch or an Arch based distro it is available in pacman

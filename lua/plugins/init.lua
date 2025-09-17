@@ -1,9 +1,7 @@
 return {
   -- Languages that requires a custom config
   require('plugins.languages.typescript'),
-  require('plugins.languages.json'),
   require('plugins.languages.markdown'),
-  require('plugins.languages.bash'),
   require('plugins.languages.sql'),
   require('plugins.languages.java'),
   require('plugins.languages.dbml'),

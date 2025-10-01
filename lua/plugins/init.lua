@@ -21,12 +21,8 @@ return {
 
   -- Editor
   require('plugins.editor.neo-tree'),
-  require('plugins.editor.mini-move'),
   require('plugins.editor.diffview'),
 
   -- LSP
   require('plugins.lsp.mason'),
-
-  -- AI
-  require('plugins.ai.copilot'),
 }

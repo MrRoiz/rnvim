@@ -7,3 +7,6 @@ vim.keymap.set({ 'n', 'v' }, '<C-S-k>', '10k', { silent = true, desc = 'Move fas
 
 vim.keymap.set('i', '<C-b>', '<esc>^i', { silent = true, desc = 'Go to the beggining of the line in insert mode' })
 vim.keymap.set('i', '<C-e>', '<end>', { silent = true, desc = 'Go to the end of the line in insert mode' })
+
+-- stylua: ignore
+vim.keymap.set( 'n', '<leader>cbf', '<CMD>!yarn biome check % --fix --unsafe<CR>', { silent = true, desc = 'Run yarn biome check with fix and unsafe flags' })

@@ -20,8 +20,8 @@ return {
     'OlegGulevskyy/better-ts-errors.nvim',
     dependencies = { 'MunifTanjim/nui.nvim' },
     keys = {
-      keymaps.toggle,
-      keymaps.go_to_definition,
+      { keymaps.toggle, desc = 'better-ts-errors: Toggle error modal on the error under cursor' },
+      { keymaps.go_to_definition, desc = 'better-ts-errors: Go to definition of the error under cursor' },
     },
     -- TODO: Add file types for ts files
     opts = {

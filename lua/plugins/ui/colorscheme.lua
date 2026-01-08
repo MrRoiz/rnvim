@@ -6,7 +6,6 @@ return {
   -- Config actual colorscheme used and lualine
   {
     'Shatur/neovim-ayu',
-    -- dir = '~/workspace/personal/neovim-ayu',
     name = 'ayu',
     lazy = true,
     opts = {

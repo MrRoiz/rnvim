@@ -19,5 +19,6 @@
 - If you're using linux a [Clipboard tool](https://neovim.io/doc/user/provider.html#provider-clipboard) is required, tested with [Xsel](https://github.com/kfish/xsel)
   - If you're using hyprland use [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 - [fzf](https://github.com/junegunn/fzf) binary is required to use [fzf-lua](https://github.com/ibhagwan/fzf-lua)
+- [unzip](https://infozip.sourceforge.net/UnZip.html) is needed to install some LSPs
 - If you're going to use [Blink](https://github.com/Saghen/blink.cmp) on its main branch, you'll need [Rust](https://www.rust-lang.org/learn/get-started) toolchain to build the plugin
 - To support [snacks.image](https://github.com/folke/snacks.nvim/blob/main/docs/image.md) we need to install the [ImageMagick](https://imagemagick.org/) binary - if you're using Arch or an Arch based distro it is available in pacman

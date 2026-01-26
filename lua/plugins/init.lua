@@ -21,8 +21,8 @@ return {
 
   -- Editor
   require('plugins.editor.neo-tree'),
-  require('plugins.editor.diffview'),
-  -- require('plugins.editor.codediff'),
+  require('plugins.editor.codediff'),
+  -- require('plugins.editor.diffview'),
 
   -- LSP
   require('plugins.lsp.mason'),

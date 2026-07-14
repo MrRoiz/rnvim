@@ -7,7 +7,14 @@ return {
   {
     'neovim/nvim-lspconfig',
     opts = function(_, opts)
-      opts.servers.vtsls.settings.typescript = {}
+      opts.servers.tsgo.settings.typescript.inlayHints = {
+        parameterNames = { enabled = false },
+        parameterTypes = { enabled = false },
+        variableTypes = { enabled = false },
+        propertyDeclarationTypes = { enabled = false },
+        functionLikeReturnTypes = { enabled = false },
+        enumMemberValues = { enabled = false },
+      }
       opts.servers.eslint = {
         settings = {
           -- helps eslint find the eslintrc when it's placed in a subfolder instead of the cwd root

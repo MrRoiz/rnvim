@@ -3,25 +3,31 @@ local keymaps = {
   go_to_definition = '<leader>cbx', -- default '<leader>dx'
 }
 
+-- TS LSP (native tsc) is provided by the
+-- `lazyvim.plugins.extras.lang.typescript.tsc` extra (see lazyvim.json).
+-- This file only overrides tsc settings and adds better-ts-errors on top.
+
 return {
   {
     'neovim/nvim-lspconfig',
-    opts = function(_, opts)
-      opts.servers.tsgo.settings.typescript.inlayHints = {
-        parameterNames = { enabled = false },
-        parameterTypes = { enabled = false },
-        variableTypes = { enabled = false },
-        propertyDeclarationTypes = { enabled = false },
-        functionLikeReturnTypes = { enabled = false },
-        enumMemberValues = { enabled = false },
-      }
-      opts.servers.eslint = {
-        settings = {
-          -- helps eslint find the eslintrc when it's placed in a subfolder instead of the cwd root
-          workingDirectories = { mode = 'auto' },
+    opts = {
+      servers = {
+        tsc = {
+          settings = {
+            ['js/ts'] = {
+              inlayHints = {
+                enumMemberValues = { enabled = false },
+                functionLikeReturnTypes = { enabled = false },
+                parameterNames = { enabled = false },
+                parameterTypes = { enabled = false },
+                propertyDeclarationTypes = { enabled = false },
+                variableTypes = { enabled = false },
+              },
+            },
+          },
         },
-      }
-    end,
+      },
+    },
   },
   {
     'OlegGulevskyy/better-ts-errors.nvim',

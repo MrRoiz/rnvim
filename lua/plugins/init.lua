@@ -28,5 +28,5 @@ return {
   require('plugins.lsp.mason'),
 
   -- AI
-  require('plugins.ai.copilot'),
+  -- require('plugins.ai.copilot'),
 }
